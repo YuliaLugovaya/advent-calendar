@@ -13,10 +13,10 @@ export const PageRoot: FC = () => {
   return (
     <Suspense fallback={null}>
       <Routes>
-        <Route path={routes.home} element={<Layout />}>
+        <Route path={routes.home.root} element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path={routes.tree} element={<TreePage />} />
-          <Route path={routes.balls} element={<BallsPage />} />
+          <Route path={routes.home.tree} element={<TreePage />} />
+          <Route path={routes.home.balls} element={<BallsPage />} />
         </Route>
       </Routes>
     </Suspense>

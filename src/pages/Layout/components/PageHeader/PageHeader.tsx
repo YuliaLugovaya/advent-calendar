@@ -23,7 +23,7 @@ export const PageHeader: FC = () => {
   return (
     <Box sx={styles.headerWrapper} component="header">
       <Box sx={styles.headerContainer}>
-        <Link to={routes.home}>
+        <Link to={routes.home.root}>
           <Box sx={styles.headerLogoContainer}>
             <CardMedia
               sx={styles.headerIcon}
@@ -57,17 +57,17 @@ export const PageHeader: FC = () => {
                 onClick={toggleDrawer}
               />
               <Box sx={styles.headerLinksBurgerContainer}>
-                <Link onClick={toggleDrawer} to={routes.home}>
+                <Link onClick={toggleDrawer} to={routes.home.root}>
                   <Typography sx={styles.headerLinksBurger}>
                     Главная страница
                   </Typography>
                 </Link>
-                <Link onClick={toggleDrawer} to={routes.tree}>
+                <Link onClick={toggleDrawer} to={routes.home.tree}>
                   <Typography sx={styles.headerLinksBurger}>
                     Новогодняя ёлка
                   </Typography>
                 </Link>
-                <Link onClick={toggleDrawer} to={routes.balls}>
+                <Link onClick={toggleDrawer} to={routes.home.balls}>
                   <Typography sx={styles.headerLinksBurger}>Шарики</Typography>
                 </Link>
               </Box>
@@ -75,13 +75,13 @@ export const PageHeader: FC = () => {
           </Box>
         ) : (
           <Box sx={styles.headerLinksContainer}>
-            <Link to={routes.home}>
+            <Link to={routes.home.root}>
               <Typography sx={styles.headerLinks}>Главная страница</Typography>
             </Link>
-            <Link to={routes.tree}>
+            <Link to={routes.home.tree}>
               <Typography sx={styles.headerLinks}>Новогодняя ёлка</Typography>
             </Link>
-            <Link to={routes.balls}>
+            <Link to={routes.home.balls}>
               <Typography sx={styles.headerLinks}>Шарики</Typography>
             </Link>
           </Box>

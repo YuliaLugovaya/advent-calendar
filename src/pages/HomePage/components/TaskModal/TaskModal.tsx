@@ -87,7 +87,7 @@ export const TaskModal: FC<ITaskModalProps> = ({
             <Typography sx={styles.modalDescription}>
               Здорово! В награду за старания держи ёлочный шарик.
             </Typography>
-            <Link to={routes.tree}>
+            <Link to={routes.home.tree}>
               <Button sx={styles.modalButton} className="secondary">
                 Нарядить новогоднюю ёлочку
               </Button>

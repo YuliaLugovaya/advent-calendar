@@ -1,37 +1,5 @@
 import { createStyles, ThemeOptions } from "@mui/material";
 
-// import {
-//   createStyles,
-//   ThemeOptions,
-//   PaletteOptions,
-// } from "@mui/material/styles";
-
-// export const themeColors = () =>
-//   createStyles({
-//     palette: {
-//       text: {
-//         primary: "#2D2D2D",
-//         secondary: "#8A8A8A",
-//         visitedLink: "#8A3FFC",
-//       },
-//       accents: {
-//         main: "#FFE600",
-//         hover: "#FFF066",
-//       },
-//       background: {
-//         default: "#FFFFFF",
-//       },
-//       gray: {
-//         hoverFocused: "#6E6E6E",
-//         disabled: "#B9B9B9",
-//         deviders: "#11111166",
-//       },
-//       error: {
-//         main: "#B3261E",
-//       },
-//     },
-//   }) as PaletteOptions;
-
 export const theme = () =>
   createStyles({
     breakpoints: {
