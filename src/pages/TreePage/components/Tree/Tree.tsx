@@ -138,7 +138,7 @@ export const Tree: FC = () => {
                 {balls.map((ball, index) => (
                   <img
                     key={index}
-                    src={`/advent-calendar${ball}`}
+                    src={`/advent-calendar/${ball}`}
                     alt="ball"
                     draggable
                     onDragStart={(e) => handleDragStart(e, ball)}
@@ -167,7 +167,7 @@ export const Tree: FC = () => {
           {treeBalls.map((treeBall, index) => (
             <img
               key={index}
-              src={`/advent-calendar${treeBall}`}
+              src={`/advent-calendar/${treeBall}`}
               alt="treeBall"
             />
           ))}

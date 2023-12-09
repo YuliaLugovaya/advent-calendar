@@ -9,7 +9,7 @@ export const styles = {
   calendarContainer: {
     display: "flex",
     flexWrap: "wrap",
-    maxWidth: "1480px",
+    maxWidth: "1200px",
     justifyContent: {
       xs: "center",
       lg: "start",
@@ -17,8 +17,8 @@ export const styles = {
     m: "0 auto",
     gap: "10px",
     pt: {
-      xs: "20vh",
-      md: "15vh",
+      xs: "100px",
+      md: "200px",
     },
   },
   calendarButton: {

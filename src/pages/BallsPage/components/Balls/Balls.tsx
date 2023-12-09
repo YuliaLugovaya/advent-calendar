@@ -12,7 +12,7 @@ export const Balls: FC = () => {
     <Box sx={styles.treeContainer}>
       <Box sx={styles.ballsContainer}>
         {balls.map((ball, index) => (
-          <img key={index} src={`/advent-calendar${ball}`} alt="ball" />
+          <img key={index} src={`/advent-calendar/${ball}`} alt="ball" />
         ))}
       </Box>
     </Box>

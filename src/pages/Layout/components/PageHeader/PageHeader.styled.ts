@@ -14,7 +14,7 @@ export const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    p: "25px 0",
+    p: "15px 0",
   },
   headerLogo: {
     fontSize: {

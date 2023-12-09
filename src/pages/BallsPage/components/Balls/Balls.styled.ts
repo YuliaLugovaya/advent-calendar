@@ -4,8 +4,8 @@ export const styles = {
     justifyContent: "center",
     m: "0 auto",
     p: {
-      xs: "20vh 0",
-      md: "15vh 0",
+      xs: "100px 0",
+      md: "200px 0",
     },
   },
   ballsContainer: {
