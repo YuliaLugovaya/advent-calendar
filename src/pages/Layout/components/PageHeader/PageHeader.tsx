@@ -47,7 +47,14 @@ export const PageHeader: FC = () => {
               anchor="right"
               open={isDrawerOpen}
               onClose={toggleDrawer}
-              sx={styles.burgerMenu}
+              sx={{
+                ...styles.burgerMenu,
+                "& .css-1160xiw-MuiPaper-root-MuiDrawer-paper": {
+                  p: "20px",
+                  bgcolor: "#434a38",
+                  width: "80vw",
+                },
+              }}
             >
               <CardMedia
                 sx={styles.headerIconClose}

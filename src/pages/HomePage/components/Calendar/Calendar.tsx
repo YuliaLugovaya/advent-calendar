@@ -8,14 +8,16 @@ import { resetBallState } from "store/ball/ballActions";
 import { resetTaskState } from "store/task/taskActions";
 
 export const Calendar: FC = () => {
+  const days = calendarItems();
   const dispatch = useDispatch();
 
   const handleReset = () => {
     window.localStorage.clear();
     dispatch(resetBallState());
     dispatch(resetTaskState());
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const days = calendarItems();
+
   return (
     <Box sx={styles.calendarWrapper}>
       <Box sx={styles.calendarContainer}>

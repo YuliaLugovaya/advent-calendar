@@ -67,11 +67,12 @@ export const styles = {
     m: "30px 0",
   },
   burgerMenu: {
-    "& .css-1160xiw-MuiPaper-root-MuiDrawer-paper": {
-      p: "20px",
-      bgcolor: "#434a38",
-      width: "80vw",
-    },
+    m: "30px 0",
+    // "& .css-1160xiw-MuiPaper-root-MuiDrawer-paper": {
+    //   p: "20px",
+    //   bgcolor: "#434a38",
+    //   width: "80vw",
+    // },
   },
   headerIconClose: {
     width: "30px",

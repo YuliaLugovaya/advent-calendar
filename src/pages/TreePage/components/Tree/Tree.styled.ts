@@ -19,7 +19,7 @@ export const styles = {
     },
     height: {
       xs: "400px",
-      md: "800px",
+      md: "700px",
     },
     display: "flex",
     justifyContent: "center",
@@ -27,14 +27,12 @@ export const styles = {
   treeChristmas: {
     width: {
       sm: "320px",
-      md: "700px",
+      md: "600px",
     },
     position: "absolute",
     top: "0",
     left: {
       xs: "0",
-      md: "50px",
-      lg: "100px",
     },
   },
   ballsWrapper: {
@@ -123,10 +121,11 @@ export const styles = {
       xs: "200px",
       md: "300px",
     },
-    padding: {
+    p: {
       xs: "20px",
       md: "20px 30px",
     },
+    mb: "20px",
     fontSize: {
       xs: 16,
       md: 18,
@@ -151,8 +150,7 @@ export const styles = {
       },
       left: {
         xs: 140,
-        md: 360,
-        lg: 410,
+        md: 260,
       },
     },
     "& img:nth-of-type(2)": {
@@ -162,8 +160,7 @@ export const styles = {
       },
       left: {
         xs: 120,
-        md: 330,
-        lg: 380,
+        md: 230,
       },
     },
     "& img:nth-of-type(3)": {
@@ -173,8 +170,7 @@ export const styles = {
       },
       left: {
         xs: 160,
-        md: 390,
-        lg: 440,
+        md: 290,
       },
     },
     "& img:nth-of-type(4)": {
@@ -184,8 +180,7 @@ export const styles = {
       },
       left: {
         xs: 115,
-        md: 320,
-        lg: 370,
+        md: 220,
       },
     },
     "& img:nth-of-type(5)": {
@@ -195,8 +190,7 @@ export const styles = {
       },
       left: {
         xs: 165,
-        md: 400,
-        lg: 450,
+        md: 300,
       },
     },
     "& img:nth-of-type(6)": {
@@ -206,8 +200,7 @@ export const styles = {
       },
       left: {
         xs: 110,
-        md: 320,
-        lg: 370,
+        md: 220,
       },
     },
     "& img:nth-of-type(7)": {
@@ -217,8 +210,7 @@ export const styles = {
       },
       left: {
         xs: 170,
-        md: 400,
-        lg: 450,
+        md: 300,
       },
     },
     "& img:nth-of-type(8)": {
@@ -228,8 +220,7 @@ export const styles = {
       },
       left: {
         xs: 90,
-        md: 365,
-        lg: 360,
+        md: 265,
       },
     },
     "& img:nth-of-type(9)": {
@@ -239,8 +230,7 @@ export const styles = {
       },
       left: {
         xs: 140,
-        md: 300,
-        lg: 415,
+        md: 200,
       },
     },
     "& img:nth-of-type(10)": {
@@ -250,8 +240,7 @@ export const styles = {
       },
       left: {
         xs: 185,
-        md: 425,
-        lg: 475,
+        md: 325,
       },
     },
     "& img:nth-of-type(11)": {
@@ -261,8 +250,7 @@ export const styles = {
       },
       left: {
         xs: 80,
-        md: 285,
-        lg: 335,
+        md: 385,
       },
     },
     "& img:nth-of-type(12)": {
@@ -272,8 +260,7 @@ export const styles = {
       },
       left: {
         xs: 140,
-        md: 360,
-        lg: 410,
+        md: 260,
       },
     },
     "& img:nth-of-type(13)": {
@@ -283,8 +270,7 @@ export const styles = {
       },
       left: {
         xs: 195,
-        md: 435,
-        lg: 485,
+        md: 335,
       },
     },
     "& img:nth-of-type(14)": {
@@ -294,8 +280,7 @@ export const styles = {
       },
       left: {
         xs: 70,
-        md: 260,
-        lg: 310,
+        md: 160,
       },
     },
     "& img:nth-of-type(15)": {
@@ -305,8 +290,7 @@ export const styles = {
       },
       left: {
         xs: 115,
-        md: 325,
-        lg: 375,
+        md: 225,
       },
     },
     "& img:nth-of-type(16)": {
@@ -316,8 +300,7 @@ export const styles = {
       },
       left: {
         xs: 170,
-        md: 385,
-        lg: 435,
+        md: 285,
       },
     },
     "& img:nth-of-type(17)": {
@@ -327,8 +310,7 @@ export const styles = {
       },
       left: {
         xs: 210,
-        md: 450,
-        lg: 500,
+        md: 350,
       },
     },
     "& img:nth-of-type(18)": {
@@ -338,8 +320,7 @@ export const styles = {
       },
       left: {
         xs: 85,
-        md: 245,
-        lg: 295,
+        md: 145,
       },
     },
     "& img:nth-of-type(19)": {
@@ -349,8 +330,7 @@ export const styles = {
       },
       left: {
         xs: 140,
-        md: 310,
-        lg: 360,
+        md: 210,
       },
     },
     "& img:nth-of-type(20)": {
@@ -360,8 +340,7 @@ export const styles = {
       },
       left: {
         xs: 185,
-        md: 390,
-        lg: 440,
+        md: 290,
       },
     },
     "& img:nth-of-type(21)": {
@@ -371,8 +350,7 @@ export const styles = {
       },
       left: {
         xs: 225,
-        md: 470,
-        lg: 520,
+        md: 270,
       },
     },
     "& img:nth-of-type(22)": {
@@ -382,8 +360,7 @@ export const styles = {
       },
       left: {
         xs: 35,
-        md: 220,
-        lg: 270,
+        md: 120,
       },
     },
     "& img:nth-of-type(23)": {
@@ -393,8 +370,7 @@ export const styles = {
       },
       left: {
         xs: 80,
-        md: 290,
-        lg: 340,
+        md: 190,
       },
     },
     "& img:nth-of-type(24)": {
@@ -404,8 +380,7 @@ export const styles = {
       },
       left: {
         xs: 130,
-        md: 355,
-        lg: 405,
+        md: 255,
       },
     },
     "& img:nth-of-type(25)": {
@@ -415,8 +390,7 @@ export const styles = {
       },
       left: {
         xs: 190,
-        md: 420,
-        lg: 470,
+        md: 320,
       },
     },
     "& img:nth-of-type(26)": {
@@ -426,8 +400,7 @@ export const styles = {
       },
       left: {
         xs: 240,
-        md: 500,
-        lg: 550,
+        md: 400,
       },
     },
     "& img:nth-of-type(27)": {
@@ -437,8 +410,7 @@ export const styles = {
       },
       left: {
         xs: 40,
-        md: 190,
-        lg: 240,
+        md: 90,
       },
     },
     "& img:nth-of-type(28)": {
@@ -448,8 +420,7 @@ export const styles = {
       },
       left: {
         xs: 100,
-        md: 270,
-        lg: 320,
+        md: 170,
       },
     },
     "& img:nth-of-type(29)": {
@@ -459,8 +430,7 @@ export const styles = {
       },
       left: {
         xs: 155,
-        md: 350,
-        lg: 400,
+        md: 250,
       },
     },
     "& img:nth-of-type(30)": {
@@ -470,8 +440,7 @@ export const styles = {
       },
       left: {
         xs: 215,
-        md: 430,
-        lg: 480,
+        md: 330,
       },
     },
     "& img:nth-of-type(31)": {
@@ -481,8 +450,7 @@ export const styles = {
       },
       left: {
         xs: 265,
-        md: 530,
-        lg: 580,
+        md: 430,
       },
     },
   },
