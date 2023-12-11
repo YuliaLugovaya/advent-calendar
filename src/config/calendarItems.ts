@@ -70,6 +70,9 @@ const colors = {
   violet: "#5e4a4b",
 };
 
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
 const calendarItems = () => [
   {
     icon: ballRed,
@@ -79,6 +82,7 @@ const calendarItems = () => [
     task: "Как здорово! Сегодня первый день зимы. Это значит, что совсем скоро будет Новый год. И самое первое праздничное задание - наряди с мамой ёлочку.",
     ball: ballDecemberFirst,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 1),
   },
   {
     icon: berries,
@@ -88,6 +92,7 @@ const calendarItems = () => [
     task: "Начни день с самых тёплых объятий с любимыми людьми. А ещё подари обнимашку любимой игрушке.",
     ball: ballDecemberSecond,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 2),
   },
   {
     icon: cake,
@@ -97,6 +102,7 @@ const calendarItems = () => [
     task: "Начни с родными традицию - в выходной декабрьский день смотреть новогодний фильм. Выбери любой фильм и посмотри его полностью. Это может быть Гарри Поттер, Один дома или другой фильм.",
     ball: ballDecemberThird,
     colorBg: colors.turquoise,
+    date: new Date(currentYear, 11, 3),
   },
   {
     icon: ballWoody,
@@ -106,6 +112,7 @@ const calendarItems = () => [
     task: "Придумай, какие добрые дела ты можешь сделать сегодня. Это может быть помощь родным людям. Можешь помочь маме сделать завтрак или отсортировать игрушки. Придумай, что ты будешь делать в удовольствие.",
     ball: ballDecemberFourth,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 4),
   },
   {
     icon: chocolate,
@@ -115,6 +122,7 @@ const calendarItems = () => [
     task: "Придумай подарки для всех своих близких. Не забывай, что самое ценное в подарках - это любовь и забота, которые мы вкладываем в них. Запиши свои идеи и постарайся придумать что-то особенное для каждого.",
     ball: ballDecemberFifth,
     colorBg: colors.peach,
+    date: new Date(currentYear, 11, 5),
   },
   {
     icon: christmasGift,
@@ -124,6 +132,7 @@ const calendarItems = () => [
     task: "Сегодня тебе предстоит навести порядок в своих вещах. А чтобы было веселее. включи свои любимые песни и преврати уборку в танцевальную вечеринку. Подпевай, танцуй и убирай одновременно!",
     ball: ballDecemberSixth,
     colorBg: colors.violet,
+    date: new Date(currentYear, 11, 6),
   },
   {
     icon: christmasOrnament,
@@ -133,6 +142,7 @@ const calendarItems = () => [
     task: "Укрась комнаты снежинками из бумаги. Помни, что волшебство находится в твоих руках!",
     ball: ballDecemberSeventh,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 7),
   },
   {
     icon: christmasTreeSnowy,
@@ -142,6 +152,7 @@ const calendarItems = () => [
     task: "Время насладиться зимними радостями! Если выпал снег - поиграй в снежки или слепи снеговика. А если снега нет - отправляйся исследовать местные достопримечательности.",
     ball: ballDecemberEighth,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 8),
   },
   {
     icon: heart,
@@ -151,6 +162,7 @@ const calendarItems = () => [
     task: "Сегодня сделай с помощью взрослых самое вкусное зимнее какао. Включи новогоднюю музыку, наслаждайся напитком и почувствуй, что праздник уже близко!",
     ball: ballDecemberNinth,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 9),
   },
   {
     icon: cup,
@@ -160,6 +172,7 @@ const calendarItems = () => [
     task: "Продолжи традицию просмотра новогодних фильмов. Выбери любой фильм и посмотри его полностью.",
     ball: ballDecemberTenth,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 10),
   },
   {
     icon: hotChocolate,
@@ -169,6 +182,7 @@ const calendarItems = () => [
     task: "Возьми свои любимые карандаши и нарисуй самый новогодний рисунок. Изобрази ёлочку, подарки, гирлянду и всё, с чем ассоциируется у тебя Новый год. А потом помести рисунок в рамочку!",
     ball: ballDecemberEleventh,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 11),
   },
   {
     icon: berriesSmall,
@@ -178,6 +192,7 @@ const calendarItems = () => [
     task: "Сегодня маме нужна твоя помощь, чтобы сделать новогодние украшения. Это могут быть новогодние орешки-игрушки на ёлку или что-то другое. Пора создавать красоту своими руками!",
     ball: ballDecemberTwelfth,
     colorBg: colors.turquoise,
+    date: new Date(currentYear, 11, 12),
   },
   {
     icon: pearlPine,
@@ -187,6 +202,7 @@ const calendarItems = () => [
     task: "Сегодня тебе предстоит узнать про традиции празднования Нового года в Беларуси. Найди и посмотри интересные видео или почитай книги про праздник в нашей стране.",
     ball: ballDecemberThirteenth,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 13),
   },
   {
     icon: man,
@@ -196,6 +212,7 @@ const calendarItems = () => [
     task: "Сегодня тебе нужно разукрасить три интересные новогодние раскраски. Где же их взять? Спроси у мамы, она подскажет!",
     ball: ballDecemberFourteenth,
     colorBg: colors.peach,
+    date: new Date(currentYear, 11, 14),
   },
   {
     icon: star,
@@ -205,6 +222,7 @@ const calendarItems = () => [
     task: "Сегодня тебе предстоит узнать про традиции празднования Нового года во всем мире. Вперед к интересным историям!",
     ball: ballDecemberFifteenth,
     colorBg: colors.violet,
+    date: new Date(currentYear, 11, 15),
   },
   {
     icon: tree,
@@ -214,6 +232,7 @@ const calendarItems = () => [
     task: "Сегодня выбери интересный новогодний мультик и посмотри его. Это может быть сборник мультиков про зиму или большой длинынй мультфильм.",
     ball: ballDecemberSixteenth,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 16),
   },
   {
     icon: snowman,
@@ -223,6 +242,7 @@ const calendarItems = () => [
     task: "Продолжи традицию просмотра новогодних фильмов. Выбери любой фильм и посмотри его полностью.",
     ball: ballDecemberSeventeenth,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 17),
   },
   {
     icon: stars,
@@ -232,6 +252,7 @@ const calendarItems = () => [
     task: "Сегодня тебе предстоит выбрать и начать разучивать новогоднее стихотворение, чтобы рассказать его в новогоднюю ночь!",
     ball: ballDecemberEighteenth,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 18),
   },
   {
     icon: pine,
@@ -241,6 +262,7 @@ const calendarItems = () => [
     task: "Сегодня устрой новогодний музыкальный день! Найди интересные новогодние песни и послушай их.",
     ball: ballDecemberNineteenth,
     colorBg: colors.turquoise,
+    date: new Date(currentYear, 11, 19),
   },
   {
     icon: starWoody,
@@ -250,6 +272,7 @@ const calendarItems = () => [
     task: "Если выпал снег - выходи на улицу и поиграй в снежки или слепи снеговика. Если снега нет - просто погуляй. А если идет дождь - нарисуй рисунок со снеговиком.",
     ball: ballDecemberTwentyth,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 20),
   },
   {
     icon: ring,
@@ -259,6 +282,7 @@ const calendarItems = () => [
     task: "Сегодня самое время подумать, какие блюда ты вместе с родными будешь готовить на Новый год. Составь список желаемых блюд, напиши рецепты и отдельно составь список продуктов.",
     ball: ballDecemberTwentyFirst,
     colorBg: colors.turquoise,
+    date: new Date(currentYear, 11, 21),
   },
   {
     icon: snowflake,
@@ -268,6 +292,7 @@ const calendarItems = () => [
     task: "Помнишь, как ты записывала идеи подарков для близких? Сегодня нужно смастерить то, что ты придумала, и спрятать подарки так, чтобы родные их не нашли до Нового года.",
     ball: ballDecemberTwentySecond,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 22),
   },
   {
     icon: christmasOrnamentColorful,
@@ -277,6 +302,7 @@ const calendarItems = () => [
     task: "Продолжи традицию просмотра новогодних фильмов. Сегодня выбери фильм или мультик именно про Рождество, потому что этот праздник уже через пару дней.",
     ball: ballDecemberTwentyThird,
     colorBg: colors.peach,
+    date: new Date(currentYear, 11, 23),
   },
   {
     icon: starSmall,
@@ -286,6 +312,7 @@ const calendarItems = () => [
     task: "Сегодня будет волшебный вечер! Когда стемнеет, выключи свет и зажги с помощью взрослых рождественские свечи. Послушай интересный рассказ про Рождество и почувствуй волшебство!",
     ball: ballDecemberTwentyFourth,
     colorBg: colors.violet,
+    date: new Date(currentYear, 11, 24),
   },
   {
     icon: christmasTreeGifts,
@@ -295,6 +322,7 @@ const calendarItems = () => [
     task: "Ура! Сегодня праздник! Помоги родным сделать рождественские блюда и украсить красиво праздничный стол.",
     ball: ballDecemberTwentyFifth,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 25),
   },
   {
     icon: snowmanWithRedHat,
@@ -304,6 +332,7 @@ const calendarItems = () => [
     task: "Закрой глаза на несколько минут и представь себя в будущем году. Какие мечты и цели ты хочешь достичь? Это может быть что угодно: игра на музыкальном инструменте, новые занятия, изучение иностранного языка. Нарисуй или запиши свои мысли и сохрани!",
     ball: ballDecemberTwentySixth,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 26),
   },
   {
     icon: pineCone,
@@ -313,6 +342,7 @@ const calendarItems = () => [
     task: "Супергерои всегда готовы выручить, и ты - одна из них! Помогай сегодня маме во всём, о чём она попросит. Помни, твоя помощь очень важна и будет оценена! Когда закончишь задание, похвали себя за то, что справилась с ним. Почувствуй радость того, что сделала что-то полезное и важное для своей мамы.",
     ball: ballDecemberTwentySeventh,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 27),
   },
   {
     icon: starWoodyBig,
@@ -322,6 +352,7 @@ const calendarItems = () => [
     task: "Ты можешь выбрать одну из двух опций: посмотреть увлекательную передачу о северном полюсе или погрузиться в чтение энциклопедии и узнать всё о нём. Узнай больше о ледяных горизонтах, о животных и морских обитателях, северном сиянии.",
     ball: ballDecemberTwentyEighth,
     colorBg: colors.yellow,
+    date: new Date(currentYear, 11, 28),
   },
   {
     icon: snowmanWithHat,
@@ -331,6 +362,7 @@ const calendarItems = () => [
     task: "Ты уже рисовала ёлочку с подарками и гирляндой. Сегодня изобрази доброго смешного снеговика! Не забудь потом также поместить рисунок в рамочку.",
     ball: ballDecemberTwentyNinth,
     colorBg: colors.green,
+    date: new Date(currentYear, 11, 29),
   },
   {
     icon: socks,
@@ -340,6 +372,7 @@ const calendarItems = () => [
     task: "Помнишь, как ты выбрала зимнее стихотворение? Сегодня самое время его повторить, чтобы в новогоднюю ночь порадовать близких красивым произведением!",
     ball: ballDecemberThirtieth,
     colorBg: colors.turquoise,
+    date: new Date(currentYear, 11, 30),
   },
   {
     icon: christmasTree,
@@ -349,6 +382,7 @@ const calendarItems = () => [
     task: "Ураа! Вот и пролетел месяц ожидания самого волшебного праздника в году - Нового года. Ты - молодец: выполняла интересные задания и радовалась приятным сюрпризам. Уже сегодня ты будешь помогать родным готовить вкусные новогодние блюда, украшать и накрывать праздничный стол. Положи под ёлочку подарки для близких и встречай Новый год! Пусть он будет радостным, светлым и добрым!",
     ball: ballDecemberThirtyFirst,
     colorBg: colors.burgundy,
+    date: new Date(currentYear, 11, 31),
   },
 ];
 

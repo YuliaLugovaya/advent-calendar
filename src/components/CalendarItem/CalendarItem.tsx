@@ -14,6 +14,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
   ball,
   colorBg,
   id,
+  date,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   const modalOpen = () => setOpenModal(true);
@@ -48,6 +49,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
         task={task}
         ball={ball}
         id={id}
+        date={date}
       />
     </Box>
   );

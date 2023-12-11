@@ -31,6 +31,7 @@ export const Calendar: FC = () => {
             ball={item.ball}
             colorBg={item.colorBg}
             id={item.id}
+            date={item.date}
           />
         ))}
       </Box>

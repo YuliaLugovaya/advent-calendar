@@ -9,4 +9,5 @@ export type ICalendarItemProps = {
   colorBg: string;
   sx?: SxProps<Theme>;
   id: string;
+  date: Date;
 };

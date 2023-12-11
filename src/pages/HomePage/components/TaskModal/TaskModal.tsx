@@ -26,9 +26,11 @@ export const TaskModal: FC<ITaskModalProps> = ({
   task,
   ball,
   id,
+  date,
 }) => {
   const [showBallContent, setShowBallContent] = useState(false);
   const [showTask, setShowTask] = useState(false);
+  const isReady = date <= new Date();
 
   const dispatch = useDispatch();
 
@@ -137,17 +139,26 @@ export const TaskModal: FC<ITaskModalProps> = ({
               <CloseIcon />
             </IconButton>
             <Box sx={styles.modalContent}>
-              <Typography sx={styles.modalTitle}>{title}</Typography>
-              <Typography sx={styles.modalDescription}>{task}</Typography>
-              <Box>
-                <Button
-                  onClick={handleReceiveBall}
-                  sx={styles.modalButton}
-                  className="primary"
-                >
-                  Задание выполнено? Получи сюрприз!
-                </Button>
-              </Box>
+              {isReady ? (
+                <>
+                  <Typography sx={styles.modalTitle}>{title}</Typography>
+                  <Typography sx={styles.modalDescription}>{task}</Typography>
+                  <Box>
+                    <Button
+                      onClick={handleReceiveBall}
+                      sx={styles.modalButton}
+                      className="primary"
+                    >
+                      Задание выполнено? Получи сюрприз!
+                    </Button>
+                  </Box>
+                </>
+              ) : (
+                <Typography sx={styles.modalDescription}>
+                  Это задание будет доступно {date.toLocaleDateString()}.
+                  Осталось немножко подождать!
+                </Typography>
+              )}
             </Box>
           </>
         )}
