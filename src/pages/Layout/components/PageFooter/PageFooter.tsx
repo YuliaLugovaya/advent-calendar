@@ -8,6 +8,7 @@ export const PageFooter: FC = () => {
       <Link
         sx={styles.footerLink}
         href="https://github.com/YuliaLugovaya/advent-calendar"
+        target="_blank"
       >
         GitHub
       </Link>

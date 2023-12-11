@@ -45,7 +45,7 @@ export const styles = {
     },
     fontSize: {
       xs: "1.1rem",
-      md: "1.5rem",
+      md: "1.3rem",
     },
     color: "#000000",
     textAlign: "justify",
@@ -72,11 +72,11 @@ export const styles = {
   modalBall: {
     width: {
       xs: "200px",
-      md: "350px",
+      md: "250px",
     },
     height: {
       xs: "200px",
-      md: "350px",
+      md: "250px",
     },
     m: {
       xs: "10px 0",
@@ -99,7 +99,7 @@ export const styles = {
   modalCompleteDescription: {
     fontSize: {
       xs: "1.1rem",
-      md: "1.5rem",
+      md: "1.3rem",
     },
     color: "#000000",
     textAlign: "justify",
