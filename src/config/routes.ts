@@ -3,5 +3,7 @@ export const routes = {
     root: "/advent-calendar",
     tree: "tree",
     balls: "balls",
+    parents: "parents",
+    edit: "edit",
   },
 };

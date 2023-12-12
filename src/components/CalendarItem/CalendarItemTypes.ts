@@ -1,13 +1,10 @@
-import { SxProps, Theme } from "@mui/material";
-
 export type ICalendarItemProps = {
-  icon?: string;
+  icon: string;
   title: string;
   text: string;
   task: string;
-  ball?: string;
+  ball: string;
   colorBg: string;
-  sx?: SxProps<Theme>;
   id: string;
-  date: Date;
+  date: string;
 };

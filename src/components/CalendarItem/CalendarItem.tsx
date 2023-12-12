@@ -50,6 +50,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
         ball={ball}
         id={id}
         date={date}
+        text={text}
       />
     </Box>
   );

@@ -27,10 +27,13 @@ export const TaskModal: FC<ITaskModalProps> = ({
   ball,
   id,
   date,
+  text,
 }) => {
   const [showBallContent, setShowBallContent] = useState(false);
   const [showTask, setShowTask] = useState(false);
-  const isReady = date <= new Date();
+  const currentDate = new Date();
+  const comingDate = new Date(date);
+  const isReady = comingDate <= currentDate;
 
   const dispatch = useDispatch();
 
@@ -155,8 +158,8 @@ export const TaskModal: FC<ITaskModalProps> = ({
                 </>
               ) : (
                 <Typography sx={styles.modalDescription}>
-                  Это задание будет доступно {date.toLocaleDateString()}.
-                  Осталось немножко подождать!
+                  Это задание будет доступно {text} декабря. Осталось немножко
+                  подождать!
                 </Typography>
               )}
             </Box>

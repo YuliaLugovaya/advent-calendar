@@ -70,6 +70,11 @@ export const PageHeader: FC = () => {
                 <Link onClick={toggleDrawer} to={routes.home.balls}>
                   <Typography sx={styles.headerLinksBurger}>Шарики</Typography>
                 </Link>
+                <Link onClick={toggleDrawer} to={routes.home.parents}>
+                  <Typography sx={styles.headerLinksBurger}>
+                    Родителям
+                  </Typography>
+                </Link>
               </Box>
             </Drawer>
           </Box>
@@ -83,6 +88,9 @@ export const PageHeader: FC = () => {
             </Link>
             <Link to={routes.home.balls}>
               <Typography sx={styles.headerLinks}>Шарики</Typography>
+            </Link>
+            <Link to={routes.home.parents}>
+              <Typography sx={styles.headerLinks}>Родителям</Typography>
             </Link>
           </Box>
         )}

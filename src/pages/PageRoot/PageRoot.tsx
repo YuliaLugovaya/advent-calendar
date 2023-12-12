@@ -7,6 +7,8 @@ import { Layout } from "pages/Layout";
 const HomePage = lazy(() => import("pages/HomePage"));
 const TreePage = lazy(() => import("pages/TreePage"));
 const BallsPage = lazy(() => import("pages/BallsPage"));
+const ParentsPage = lazy(() => import("pages/ParentsPage"));
+const EditPage = lazy(() => import("pages/EditPage"));
 
 export const PageRoot: FC = () => {
   useLocationScrollToTop();
@@ -17,6 +19,8 @@ export const PageRoot: FC = () => {
           <Route index element={<HomePage />} />
           <Route path={routes.home.tree} element={<TreePage />} />
           <Route path={routes.home.balls} element={<BallsPage />} />
+          <Route path={routes.home.parents} element={<ParentsPage />} />
+          <Route path={routes.home.edit} element={<EditPage />} />
         </Route>
       </Routes>
     </Suspense>

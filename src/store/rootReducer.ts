@@ -1,10 +1,12 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import { ballReducer } from "./ball/ballReducer";
 import { taskReducer } from "./task/taskReducer";
+import { editReducer } from "./edit/editReducer";
 
 const appReducer = combineReducers({
   ball: ballReducer,
   task: taskReducer,
+  edit: editReducer,
 });
 
 export type RootState = ReturnType<typeof appReducer>;

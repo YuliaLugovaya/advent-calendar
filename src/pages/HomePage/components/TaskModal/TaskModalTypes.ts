@@ -8,5 +8,6 @@ export interface ITaskModalProps {
   ball?: string;
   setCompleted?: Dispatch<React.SetStateAction<boolean>>;
   id: string;
-  date: Date;
+  date: string;
+  text: string;
 }
