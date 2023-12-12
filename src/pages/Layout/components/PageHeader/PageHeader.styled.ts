@@ -14,12 +14,12 @@ export const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    p: "15px 0",
+    p: "10px 0",
   },
   headerLogo: {
     fontSize: {
       xs: "1rem",
-      md: "1.7rem",
+      md: "1.5rem",
     },
     color: "#FFFFFF",
     transition: "ease 0.3s",
@@ -33,7 +33,7 @@ export const styles = {
     gap: "25px",
   },
   headerLinks: {
-    fontSize: "1.3rem",
+    fontSize: "1.1rem",
     color: "#FFFFFF",
     transition: "ease 0.3s",
     "&:hover": {

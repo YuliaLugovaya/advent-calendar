@@ -7,13 +7,9 @@ export const styles = {
     alignItems: "center",
     gap: "10px",
     m: "0 auto",
-    pt: {
-      xs: "100px",
-      md: "200px",
-    },
-    pb: {
-      xs: "50px",
-      md: "100px",
+    p: {
+      xs: "100px 20px 50px 20px",
+      md: "150px 20px 100px 20px",
     },
   },
   parentsButton: {
@@ -37,11 +33,10 @@ export const styles = {
   parentsTitle: {
     mb: {
       xs: "20px",
-      md: "30px",
     },
     fontSize: {
-      xs: "1.5rem",
-      md: "2rem",
+      xs: "1.3rem",
+      md: "1.7rem",
     },
     color: "#c29463",
     textAlign: "center",
@@ -49,11 +44,10 @@ export const styles = {
   parentsDescription: {
     mb: {
       xs: "20px",
-      md: "30px",
     },
     fontSize: {
-      xs: "1.1rem",
-      md: "1.3rem",
+      xs: "1rem",
+      md: "1.2rem",
     },
     textAlign: "justify",
   },

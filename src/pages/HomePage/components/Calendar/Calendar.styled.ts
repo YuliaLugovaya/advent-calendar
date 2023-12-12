@@ -18,7 +18,7 @@ export const styles = {
     gap: "10px",
     pt: {
       xs: "100px",
-      md: "200px",
+      md: "150px",
     },
   },
   calendarButton: {

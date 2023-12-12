@@ -9,7 +9,7 @@ export const styles = {
     m: "0 auto",
     pt: {
       xs: "100px",
-      md: "200px",
+      md: "150px",
     },
     pb: {
       xs: "50px",

@@ -5,7 +5,7 @@ export const styles = {
     m: "0 auto",
     p: {
       xs: "100px 0",
-      md: "200px 0",
+      md: "150px 0",
     },
   },
   ballsContainer: {
@@ -16,11 +16,11 @@ export const styles = {
     "& img": {
       width: {
         xs: "200px",
-        sm: "300px",
+        sm: "250px",
       },
       height: {
         xs: "200px",
-        sm: "300px",
+        sm: "250px",
       },
     },
   },

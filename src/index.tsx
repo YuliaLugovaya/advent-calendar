@@ -22,7 +22,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <Provider store={store}>
-    <Helmet title="Advent Calendar" />
+    <Helmet title="New Year's Advent calendar" />
     <BrowserRouter>
       <Theme>
         {appGlobalStyles}
