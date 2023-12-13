@@ -7,4 +7,5 @@ export type ICalendarItemProps = {
   colorBg: string;
   id: string;
   date: string;
+  link: string;
 };

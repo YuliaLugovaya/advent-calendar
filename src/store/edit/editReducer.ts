@@ -22,6 +22,7 @@ export const editReducer = (
           ? {
               ...action.payload,
               date: format(new Date(action.payload.date), "yyyy-MM-dd"),
+              link: "",
             }
           : task,
       );

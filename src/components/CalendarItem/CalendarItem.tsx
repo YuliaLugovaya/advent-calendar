@@ -15,6 +15,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
   colorBg,
   id,
   date,
+  link,
 }) => {
   const [openModal, setOpenModal] = useState(false);
   const modalOpen = () => setOpenModal(true);
@@ -51,6 +52,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
         id={id}
         date={date}
         text={text}
+        link={link}
       />
     </Box>
   );

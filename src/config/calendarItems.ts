@@ -84,6 +84,7 @@ const calendarItems = [
     ball: ballDecemberFirst,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 1), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: berries,
@@ -94,6 +95,7 @@ const calendarItems = [
     ball: ballDecemberSecond,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 2), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: cake,
@@ -104,6 +106,7 @@ const calendarItems = [
     ball: ballDecemberThird,
     colorBg: colors.turquoise,
     date: format(new Date(currentYear, 11, 3), "yyyy-MM-dd"),
+    link: "/advent-calendar/movie-list",
   },
   {
     icon: ballWoody,
@@ -114,6 +117,7 @@ const calendarItems = [
     ball: ballDecemberFourth,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 4), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: chocolate,
@@ -124,6 +128,7 @@ const calendarItems = [
     ball: ballDecemberFifth,
     colorBg: colors.peach,
     date: format(new Date(currentYear, 11, 5), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasGift,
@@ -134,6 +139,7 @@ const calendarItems = [
     ball: ballDecemberSixth,
     colorBg: colors.violet,
     date: format(new Date(currentYear, 11, 6), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasOrnament,
@@ -144,6 +150,7 @@ const calendarItems = [
     ball: ballDecemberSeventh,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 7), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasTreeSnowy,
@@ -154,6 +161,7 @@ const calendarItems = [
     ball: ballDecemberEighth,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 8), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: heart,
@@ -164,6 +172,7 @@ const calendarItems = [
     ball: ballDecemberNinth,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 9), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: cup,
@@ -174,6 +183,7 @@ const calendarItems = [
     ball: ballDecemberTenth,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 10), "yyyy-MM-dd"),
+    link: "/advent-calendar/movie-list",
   },
   {
     icon: hotChocolate,
@@ -184,6 +194,7 @@ const calendarItems = [
     ball: ballDecemberEleventh,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 11), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: berriesSmall,
@@ -194,16 +205,18 @@ const calendarItems = [
     ball: ballDecemberTwelfth,
     colorBg: colors.turquoise,
     date: format(new Date(currentYear, 11, 12), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: pearlPine,
     text: "13",
     id: "13",
     title: "День историй про Новый год",
-    task: "Сегодня тебе предстоит узнать про традиции празднования Нового года в Беларуси. Найди и посмотри интересные видео или почитай книги про праздник в нашей стране.",
+    task: "Сегодня тебе предстоит узнать про традиции празднования Нового года в Беларуси. На сайте есть интересная статья, попроси родных тебе почитать, а потом возвращайся сюда за сюрпризом.",
     ball: ballDecemberThirteenth,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 13), "yyyy-MM-dd"),
+    link: "/advent-calendar/belarus-traditions",
   },
   {
     icon: man,
@@ -214,6 +227,7 @@ const calendarItems = [
     ball: ballDecemberFourteenth,
     colorBg: colors.peach,
     date: format(new Date(currentYear, 11, 14), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: star,
@@ -224,6 +238,7 @@ const calendarItems = [
     ball: ballDecemberFifteenth,
     colorBg: colors.violet,
     date: format(new Date(currentYear, 11, 15), "yyyy-MM-dd"),
+    link: "/advent-calendar/belarus-traditions",
   },
   {
     icon: tree,
@@ -234,6 +249,7 @@ const calendarItems = [
     ball: ballDecemberSixteenth,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 16), "yyyy-MM-dd"),
+    link: "/advent-calendar/cartoon-list",
   },
   {
     icon: snowman,
@@ -244,6 +260,7 @@ const calendarItems = [
     ball: ballDecemberSeventeenth,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 17), "yyyy-MM-dd"),
+    link: "/advent-calendar/movie-list",
   },
   {
     icon: stars,
@@ -254,6 +271,7 @@ const calendarItems = [
     ball: ballDecemberEighteenth,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 18), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: pine,
@@ -264,6 +282,7 @@ const calendarItems = [
     ball: ballDecemberNineteenth,
     colorBg: colors.turquoise,
     date: format(new Date(currentYear, 11, 19), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: starWoody,
@@ -274,6 +293,7 @@ const calendarItems = [
     ball: ballDecemberTwentyth,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 20), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: ring,
@@ -284,6 +304,7 @@ const calendarItems = [
     ball: ballDecemberTwentyFirst,
     colorBg: colors.turquoise,
     date: format(new Date(currentYear, 11, 21), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: snowflake,
@@ -294,6 +315,7 @@ const calendarItems = [
     ball: ballDecemberTwentySecond,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 22), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasOrnamentColorful,
@@ -304,6 +326,7 @@ const calendarItems = [
     ball: ballDecemberTwentyThird,
     colorBg: colors.peach,
     date: format(new Date(currentYear, 11, 23), "yyyy-MM-dd"),
+    link: "/advent-calendar/movie-list",
   },
   {
     icon: starSmall,
@@ -314,6 +337,7 @@ const calendarItems = [
     ball: ballDecemberTwentyFourth,
     colorBg: colors.violet,
     date: format(new Date(currentYear, 11, 24), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasTreeGifts,
@@ -324,6 +348,7 @@ const calendarItems = [
     ball: ballDecemberTwentyFifth,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 25), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: snowmanWithRedHat,
@@ -334,6 +359,7 @@ const calendarItems = [
     ball: ballDecemberTwentySixth,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 26), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: pineCone,
@@ -344,6 +370,7 @@ const calendarItems = [
     ball: ballDecemberTwentySeventh,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 27), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: starWoodyBig,
@@ -354,6 +381,7 @@ const calendarItems = [
     ball: ballDecemberTwentyEighth,
     colorBg: colors.yellow,
     date: format(new Date(currentYear, 11, 28), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: snowmanWithHat,
@@ -364,6 +392,7 @@ const calendarItems = [
     ball: ballDecemberTwentyNinth,
     colorBg: colors.green,
     date: format(new Date(currentYear, 11, 29), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: socks,
@@ -374,6 +403,7 @@ const calendarItems = [
     ball: ballDecemberThirtieth,
     colorBg: colors.turquoise,
     date: format(new Date(currentYear, 11, 30), "yyyy-MM-dd"),
+    link: "",
   },
   {
     icon: christmasTree,
@@ -384,6 +414,7 @@ const calendarItems = [
     ball: ballDecemberThirtyFirst,
     colorBg: colors.burgundy,
     date: format(new Date(currentYear, 11, 31), "yyyy-MM-dd"),
+    link: "",
   },
 ];
 

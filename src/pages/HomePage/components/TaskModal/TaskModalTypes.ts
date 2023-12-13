@@ -5,9 +5,10 @@ export interface ITaskModalProps {
   modalClose: () => void;
   title: string;
   task: string;
-  ball?: string;
+  ball: string;
   setCompleted?: Dispatch<React.SetStateAction<boolean>>;
   id: string;
   date: string;
   text: string;
+  link: string;
 }

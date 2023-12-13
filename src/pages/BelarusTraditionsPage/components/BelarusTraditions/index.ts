@@ -1,0 +1,1 @@
+export { BelarusTraditions } from "./BelarusTraditions";

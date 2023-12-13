@@ -50,6 +50,14 @@ export const styles = {
     color: "#000000",
     textAlign: "justify",
   },
+  modalLink: {
+    mb: "20px",
+    fontSize: {
+      xs: "1.1rem",
+      md: "1.3rem",
+    },
+    color: "#c29463",
+  },
   modalButton: {
     width: {
       xs: "300px",

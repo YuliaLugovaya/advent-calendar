@@ -9,6 +9,10 @@ const TreePage = lazy(() => import("pages/TreePage"));
 const BallsPage = lazy(() => import("pages/BallsPage"));
 const ParentsPage = lazy(() => import("pages/ParentsPage"));
 const EditPage = lazy(() => import("pages/EditPage"));
+const BelarusTraditionsPage = lazy(() => import("pages/BelarusTraditionsPage"));
+const WorldTraditionsPage = lazy(() => import("pages/WorldTraditionsPage"));
+const MovieListPage = lazy(() => import("pages/MovieListPage"));
+const CartoonListPage = lazy(() => import("pages/CartoonListPage"));
 
 export const PageRoot: FC = () => {
   useLocationScrollToTop();
@@ -21,6 +25,16 @@ export const PageRoot: FC = () => {
           <Route path={routes.home.balls} element={<BallsPage />} />
           <Route path={routes.home.parents} element={<ParentsPage />} />
           <Route path={routes.home.edit} element={<EditPage />} />
+          <Route
+            path={routes.home.belarusTraditions}
+            element={<BelarusTraditionsPage />}
+          />
+          <Route
+            path={routes.home.worldTraditions}
+            element={<WorldTraditionsPage />}
+          />
+          <Route path={routes.home.movieList} element={<MovieListPage />} />
+          <Route path={routes.home.cartoonList} element={<CartoonListPage />} />
         </Route>
       </Routes>
     </Suspense>

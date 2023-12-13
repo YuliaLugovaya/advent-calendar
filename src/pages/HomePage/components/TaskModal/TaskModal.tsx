@@ -28,6 +28,7 @@ export const TaskModal: FC<ITaskModalProps> = ({
   id,
   date,
   text,
+  link,
 }) => {
   const [showBallContent, setShowBallContent] = useState(false);
   const [showTask, setShowTask] = useState(false);
@@ -146,6 +147,13 @@ export const TaskModal: FC<ITaskModalProps> = ({
                 <>
                   <Typography sx={styles.modalTitle}>{title}</Typography>
                   <Typography sx={styles.modalDescription}>{task}</Typography>
+                  {link !== "" && (
+                    <Link to={link} target="_blank">
+                      <Typography sx={styles.modalLink}>
+                        Читать статью
+                      </Typography>
+                    </Link>
+                  )}
                   <Box>
                     <Button
                       onClick={handleReceiveBall}
@@ -162,6 +170,17 @@ export const TaskModal: FC<ITaskModalProps> = ({
                   подождать!
                 </Typography>
               )}
+              {/* <Typography sx={styles.modalTitle}>{title}</Typography>
+              <Typography sx={styles.modalDescription}>{task}</Typography>
+              <Box>
+                <Button
+                  onClick={handleReceiveBall}
+                  sx={styles.modalButton}
+                  className="primary"
+                >
+                  Задание выполнено? Получи сюрприз!
+                </Button>
+              </Box> */}
             </Box>
           </>
         )}

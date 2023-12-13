@@ -37,6 +37,7 @@ export const Calendar: FC = () => {
             colorBg={item.colorBg}
             id={item.id}
             date={item.date}
+            link={item.link}
           />
         ))}
       </Box>

@@ -7,6 +7,7 @@ export interface Task {
   colorBg: string;
   id: string;
   date: string;
+  link: string;
 }
 
 export interface CalendarItemsState {
