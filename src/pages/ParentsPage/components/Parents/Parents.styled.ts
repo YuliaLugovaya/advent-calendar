@@ -2,6 +2,10 @@ export const styles = {
   parentsContainer: {
     maxWidth: "1200px",
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "center",
     gap: "30px",
     m: "0 auto",
@@ -11,10 +15,16 @@ export const styles = {
     },
   },
   parentsSections: {
-    width: "30%",
+    width: {
+      xs: "100%",
+      md: "30%",
+    },
   },
   parentsAbout: {
-    width: "70%",
+    width: {
+      xs: "100%",
+      md: "70%",
+    },
   },
   parentsButton: {
     width: {
