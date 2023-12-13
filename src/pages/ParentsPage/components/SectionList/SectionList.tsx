@@ -32,14 +32,14 @@ export const SectionList: FC = () => {
         component={Link}
         to={`/advent-calendar/movie-list`}
       >
-        <ListItemText primary="Список новогодних фильмов" />
+        <ListItemText primary="Список фильмов про зиму" />
       </ListItem>
       <ListItem
         sx={styles.sectionsItem}
         component={Link}
         to={`/advent-calendar/cartoon-list`}
       >
-        <ListItemText primary="Список новогодних мультиков" />
+        <ListItemText primary="Список мультиков про зиму" />
       </ListItem>
       {/* <ListItem
         sx={styles.sectionsItem}

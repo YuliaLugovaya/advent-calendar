@@ -2,22 +2,28 @@ import React, { FC, useState } from "react";
 import {
   Box,
   Button,
+  CardMedia,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
   TextField,
+  Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { styles } from "./EditTask.styled";
 import { CalendarItemsState, Task } from "store/edit/editTypes";
 import { useDispatch, useSelector } from "react-redux";
 import { updateTask } from "store/edit/editActions";
+import edit from "assets/images/png/edit.png";
+import done from "assets/images/png/complete.png";
 
 export const EditTask: FC = () => {
   const tasks = useSelector(
     (rootReducer: { edit: CalendarItemsState }) => rootReducer.edit.tasks,
   );
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
   const dispatch = useDispatch();
 
@@ -52,17 +58,29 @@ export const EditTask: FC = () => {
       <Table>
         <TableHead sx={styles.editHead}>
           <TableRow>
-            <TableCell sx={styles.editTitles}>Число</TableCell>
+            <TableCell sx={styles.editTitles}>
+              {isMobile ? (
+                <Typography>N</Typography>
+              ) : (
+                <Typography>Число</Typography>
+              )}
+            </TableCell>
             <TableCell sx={styles.editTitles}>Заголовок</TableCell>
             <TableCell sx={styles.editTitles}>Задание</TableCell>
-            <TableCell sx={styles.editTitles}>Опция</TableCell>
+            <TableCell sx={styles.editTitles}>
+              {isMobile ? (
+                <Typography>Ред.</Typography>
+              ) : (
+                <Typography>Опция</Typography>
+              )}
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {tasks.map((item) => (
             <TableRow key={item.id}>
               <TableCell sx={styles.editTable}>{item.text}</TableCell>
-              <TableCell sx={styles.editTable}>
+              <TableCell sx={styles.editTitle}>
                 {editingTask?.id === item.id ? (
                   <TextField
                     value={editedTitle}
@@ -89,14 +107,32 @@ export const EditTask: FC = () => {
               <TableCell sx={styles.editTable}>
                 {editingTask?.id === item.id ? (
                   <Button onClick={handleSave} sx={styles.saveButton}>
-                    Сохранить
+                    {isMobile ? (
+                      <CardMedia
+                        sx={styles.editIcon}
+                        component="img"
+                        image={done}
+                        alt="Save"
+                      />
+                    ) : (
+                      <Typography>Сохранить</Typography>
+                    )}
                   </Button>
                 ) : (
                   <Button
                     onClick={() => handleEdit(item)}
                     sx={styles.editButton}
                   >
-                    Редактировать
+                    {isMobile ? (
+                      <CardMedia
+                        sx={styles.editIcon}
+                        component="img"
+                        image={edit}
+                        alt="Save"
+                      />
+                    ) : (
+                      <Typography>Редактировать</Typography>
+                    )}
                   </Button>
                 )}
               </TableCell>

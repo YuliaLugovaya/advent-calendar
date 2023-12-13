@@ -17,14 +17,42 @@ export const styles = {
     },
   },
   editTable: {
-    fontSize: 16,
+    fontSize: {
+      xs: 14,
+      md: 16,
+    },
+    p: {
+      xs: "5px",
+      md: "16px",
+    },
+  },
+  editTitle: {
+    fontSize: {
+      xs: 14,
+      md: 16,
+    },
+    p: {
+      xs: "5px",
+      md: "16px",
+    },
+    wordBreak: {
+      xs: "break-all",
+      sm: "normal",
+    },
   },
   editHead: {
     bgcolor: "#c29463",
   },
   editTitles: {
     color: "#FFFFFF",
-    fontSize: 18,
+    fontSize: {
+      xs: 16,
+      md: 18,
+    },
+    p: {
+      xs: "5px",
+      md: "16px",
+    },
   },
   editTextarea: {
     width: "100%",
@@ -34,11 +62,16 @@ export const styles = {
     "&:hover": {
       bgcolor: "transparent",
     },
+    minWidth: "35px",
   },
   saveButton: {
     color: "#94a975",
     "&:hover": {
       bgcolor: "transparent",
     },
+    minWidth: "35px",
+  },
+  editIcon: {
+    width: "35px",
   },
 };
