@@ -18,7 +18,7 @@ export const styles = {
   },
   editTable: {
     fontSize: {
-      xs: 14,
+      xs: 13,
       md: 16,
     },
     p: {
@@ -28,16 +28,12 @@ export const styles = {
   },
   editTitle: {
     fontSize: {
-      xs: 14,
+      xs: 13,
       md: 16,
     },
     p: {
       xs: "5px",
       md: "16px",
-    },
-    wordBreak: {
-      xs: "break-all",
-      sm: "normal",
     },
   },
   editHead: {
@@ -46,7 +42,7 @@ export const styles = {
   editTitles: {
     color: "#FFFFFF",
     fontSize: {
-      xs: 16,
+      xs: 14,
       md: 18,
     },
     p: {
@@ -62,16 +58,23 @@ export const styles = {
     "&:hover": {
       bgcolor: "transparent",
     },
-    minWidth: "35px",
+    minWidth: "30px",
   },
   saveButton: {
     color: "#94a975",
     "&:hover": {
       bgcolor: "transparent",
     },
-    minWidth: "35px",
+    minWidth: "30px",
   },
   editIcon: {
-    width: "35px",
+    width: "30px",
+  },
+  editContent: {
+    display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
   },
 };

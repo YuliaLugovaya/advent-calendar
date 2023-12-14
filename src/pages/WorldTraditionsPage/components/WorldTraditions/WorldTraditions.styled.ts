@@ -10,7 +10,7 @@ export const styles = {
     },
     m: "0 auto",
     p: {
-      xs: "100px 20px 50px 20px",
+      xs: "100px 15px 50px 15px",
       md: "150px 20px 100px 20px",
     },
   },
@@ -39,27 +39,26 @@ export const styles = {
       xs: "20px",
     },
     fontSize: {
-      xs: "1rem",
-      md: "1.2rem",
+      xs: "1.1rem",
+      md: "1.3rem",
     },
     textAlign: "justify",
     color: "#d99f94",
   },
   traditionsSection: {
     display: "flex",
-    gap: "20px",
-  },
-  traditionsSectionReverse: {
-    display: "flex",
-    flexDirection: "row-reverse",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    flexDirection: {
+      xs: "column",
+      lg: "row",
+    },
     gap: "20px",
   },
   traditionsText: {
-    width: "50%",
-  },
-  traditionsPicture: {
-    width: "50%",
-    height: "450px",
-    objectFit: "cover",
+    width: {
+      xs: "100%",
+      lg: "350px",
+    },
   },
 };

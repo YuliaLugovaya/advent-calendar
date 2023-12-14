@@ -72,7 +72,7 @@ export const styles = {
       xs: "100%",
       lg: "50%",
     },
-    height: "450px",
     objectFit: "cover",
+    boxShadow: "0px 5px 10px 0px rgba(67, 74, 56, 0.2)",
   },
 };

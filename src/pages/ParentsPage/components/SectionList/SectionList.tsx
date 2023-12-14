@@ -41,13 +41,13 @@ export const SectionList: FC = () => {
       >
         <ListItemText primary="Список мультиков про зиму" />
       </ListItem>
-      {/* <ListItem
+      <ListItem
         sx={styles.sectionsItem}
         component={Link}
-        to={`/advent-calendar/edit`}
+        to={`/advent-calendar/santas`}
       >
-        <ListItemText primary="Полезные ссылки" />
-      </ListItem> */}
+        <ListItemText primary="Деды Морозы разных стран" />
+      </ListItem>
     </List>
   );
 };

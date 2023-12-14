@@ -9,6 +9,6 @@ export const routes = {
     worldTraditions: "world-traditions",
     movieList: "movie-list",
     cartoonList: "cartoon-list",
-    usefulLinks: "useful-links",
+    santas: "santas",
   },
 };

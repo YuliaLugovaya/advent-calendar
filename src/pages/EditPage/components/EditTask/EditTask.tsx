@@ -58,40 +58,67 @@ export const EditTask: FC = () => {
       <Table>
         <TableHead sx={styles.editHead}>
           <TableRow>
-            <TableCell sx={styles.editTitles}>
-              {isMobile ? (
-                <Typography>N</Typography>
-              ) : (
-                <Typography>Число</Typography>
-              )}
-            </TableCell>
-            <TableCell sx={styles.editTitles}>Заголовок</TableCell>
-            <TableCell sx={styles.editTitles}>Задание</TableCell>
-            <TableCell sx={styles.editTitles}>
-              {isMobile ? (
-                <Typography>Ред.</Typography>
-              ) : (
-                <Typography>Опция</Typography>
-              )}
-            </TableCell>
+            {isMobile ? (
+              <>
+                <TableCell sx={styles.editTitles}>Число / Заголовок</TableCell>
+                <TableCell sx={styles.editTitles}>Задание</TableCell>
+                <TableCell sx={styles.editTitles}>
+                  <Typography>Ред.</Typography>
+                </TableCell>
+              </>
+            ) : (
+              <>
+                <TableCell sx={styles.editTitles}>
+                  <Typography>Число</Typography>
+                </TableCell>
+                <TableCell sx={styles.editTitles}>Заголовок</TableCell>
+                <TableCell sx={styles.editTitles}>Задание</TableCell>
+                <TableCell sx={styles.editTitles}>
+                  <Typography>Опция</Typography>
+                </TableCell>
+              </>
+            )}
           </TableRow>
         </TableHead>
         <TableBody>
           {tasks.map((item) => (
             <TableRow key={item.id}>
-              <TableCell sx={styles.editTable}>{item.text}</TableCell>
-              <TableCell sx={styles.editTitle}>
-                {editingTask?.id === item.id ? (
-                  <TextField
-                    value={editedTitle}
-                    onChange={(e) => setEditedTitle(e.target.value)}
-                    multiline
-                    sx={styles.editTextarea}
-                  />
-                ) : (
-                  item.title
-                )}
-              </TableCell>
+              {isMobile ? (
+                <>
+                  <TableCell sx={styles.editTable}>
+                    <TableRow sx={styles.editTable}>{item.text}</TableRow>
+                    <TableRow sx={styles.editTitle}>
+                      {editingTask?.id === item.id ? (
+                        <TextField
+                          value={editedTitle}
+                          onChange={(e) => setEditedTitle(e.target.value)}
+                          multiline
+                          sx={styles.editTextarea}
+                        />
+                      ) : (
+                        item.title
+                      )}
+                    </TableRow>
+                  </TableCell>
+                </>
+              ) : (
+                <>
+                  <TableCell sx={styles.editTable}>{item.text}</TableCell>
+                  <TableCell sx={styles.editTitle}>
+                    {editingTask?.id === item.id ? (
+                      <TextField
+                        value={editedTitle}
+                        onChange={(e) => setEditedTitle(e.target.value)}
+                        multiline
+                        sx={styles.editTextarea}
+                      />
+                    ) : (
+                      item.title
+                    )}
+                  </TableCell>
+                </>
+              )}
+
               <TableCell sx={styles.editTable}>
                 {editingTask?.id === item.id ? (
                   <TextField

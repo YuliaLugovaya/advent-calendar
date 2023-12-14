@@ -13,6 +13,7 @@ const BelarusTraditionsPage = lazy(() => import("pages/BelarusTraditionsPage"));
 const WorldTraditionsPage = lazy(() => import("pages/WorldTraditionsPage"));
 const MovieListPage = lazy(() => import("pages/MovieListPage"));
 const CartoonListPage = lazy(() => import("pages/CartoonListPage"));
+const SantasPage = lazy(() => import("pages/SantasPage"));
 
 export const PageRoot: FC = () => {
   useLocationScrollToTop();
@@ -35,6 +36,7 @@ export const PageRoot: FC = () => {
           />
           <Route path={routes.home.movieList} element={<MovieListPage />} />
           <Route path={routes.home.cartoonList} element={<CartoonListPage />} />
+          <Route path={routes.home.santas} element={<SantasPage />} />
         </Route>
       </Routes>
     </Suspense>
