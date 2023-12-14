@@ -25,6 +25,11 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
       rootReducer.task.isCompleted[id] || false,
   );
 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsDrawerOpen((prev) => !prev);
+  };
+
   return (
     <Box sx={styles.itemWrapper}>
       <Button

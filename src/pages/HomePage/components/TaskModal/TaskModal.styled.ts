@@ -9,16 +9,23 @@ export const styles = {
     transform: "translate(-50%, -50%)",
     width: {
       xs: "100%",
+      md: "80%",
+      lg: "50%",
+    },
+    height: {
+      xs: "100%",
       md: "auto",
     },
     bgcolor: "#FFFFFF",
     borderRadius: { xs: "0", md: "10px" },
     p: {
       xs: "35px 20px 40px 20px",
-      md: "3% 15% 6% 15%",
-      lg: "3% 10% 5% 10%",
+      md: "45px 45px 50px 45px",
+      lg: "50px 60px 70px 60px",
     },
     outline: "none",
+    overflowY: "auto",
+    overflowX: "hidden",
   },
   modalContent: {
     display: "flex",
@@ -32,19 +39,23 @@ export const styles = {
   modalTitle: {
     mt: "20px",
     fontSize: {
-      xs: "1.5rem",
-      md: "2rem",
+      xs: "1.4rem",
+      md: "1.8rem",
     },
     color: "#c29463",
     textAlign: "center",
+    lineHeight: {
+      xs: 1,
+      md: 1.3,
+    },
   },
   modalDescription: {
     m: {
-      xs: "20px 0 40px 0",
-      md: "30px 0 50px 0",
+      xs: "20px 0 30px 0",
+      md: "25px 0 35px 0",
     },
     fontSize: {
-      xs: "1.1rem",
+      xs: "1rem",
       md: "1.3rem",
     },
     color: "#000000",
@@ -60,7 +71,7 @@ export const styles = {
   },
   modalButton: {
     width: {
-      xs: "300px",
+      xs: "100%",
       md: "450px",
     },
     padding: "20px 30px",
@@ -79,20 +90,22 @@ export const styles = {
   },
   modalBall: {
     width: {
-      xs: "200px",
-      md: "250px",
+      xs: "150px",
+      md: "200px",
     },
     height: {
-      xs: "200px",
-      md: "250px",
+      xs: "150px",
+      md: "200px",
     },
     m: {
       xs: "10px 0",
-      md: "20px 0",
     },
   },
   modalLights: {
-    width: "75%",
+    width: {
+      xs: "80%",
+      lg: "50%",
+    },
     textAlign: "center",
   },
   modalCompleteContainer: {
@@ -100,8 +113,8 @@ export const styles = {
     alignItems: "end",
     gap: "10px",
     m: {
-      xs: "20px 0 40px 0",
-      md: "30px 0 50px 0",
+      xs: "20px 0 30px 0",
+      md: "25px 0 35px 0",
     },
   },
   modalCompleteDescription: {
@@ -113,7 +126,7 @@ export const styles = {
     textAlign: "justify",
   },
   modalComplete: {
-    width: "50px",
-    height: "50px",
+    width: "30px",
+    height: "30px",
   },
 };

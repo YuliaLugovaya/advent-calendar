@@ -63,11 +63,11 @@ export const styles = {
     "& img": {
       width: {
         xs: "50px",
-        md: "100px",
+        md: "70px",
       },
       height: {
         xs: "50px",
-        md: "100px",
+        md: "70px",
       },
     },
     "& .lights": {
@@ -93,6 +93,7 @@ export const styles = {
     flexWrap: "wrap",
     alignContent: "start",
     justifyContent: "center",
+    gap: "5px",
   },
   ballsDescription: {
     m: {
@@ -107,8 +108,8 @@ export const styles = {
   },
   ballsTask: {
     m: {
-      xs: "30px 0",
-      md: "70px 0",
+      xs: "20px 0",
+      md: "50px 0",
     },
     fontSize: {
       xs: "1.1rem",
@@ -138,7 +139,7 @@ export const styles = {
     "& img": {
       width: {
         xs: "30px",
-        md: "55px",
+        md: "45px",
       },
       position: "absolute",
       top: "0",
@@ -146,17 +147,17 @@ export const styles = {
     "& img:nth-of-type(1)": {
       top: {
         xs: 25,
-        md: 50,
+        md: 45,
       },
       left: {
         xs: 140,
-        md: 215,
+        md: 220,
       },
     },
     "& img:nth-of-type(2)": {
       top: {
         xs: 55,
-        md: 110,
+        md: 95,
       },
       left: {
         xs: 120,
@@ -166,7 +167,7 @@ export const styles = {
     "& img:nth-of-type(3)": {
       top: {
         xs: 55,
-        md: 110,
+        md: 95,
       },
       left: {
         xs: 160,
@@ -176,27 +177,27 @@ export const styles = {
     "& img:nth-of-type(4)": {
       top: {
         xs: 90,
-        md: 170,
+        md: 150,
       },
       left: {
         xs: 115,
-        md: 175,
+        md: 185,
       },
     },
     "& img:nth-of-type(5)": {
       top: {
         xs: 90,
-        md: 170,
+        md: 150,
       },
       left: {
         xs: 165,
-        md: 255,
+        md: 245,
       },
     },
     "& img:nth-of-type(6)": {
       top: {
         xs: 125,
-        md: 230,
+        md: 205,
       },
       left: {
         xs: 110,
@@ -206,7 +207,7 @@ export const styles = {
     "& img:nth-of-type(7)": {
       top: {
         xs: 125,
-        md: 230,
+        md: 205,
       },
       left: {
         xs: 170,
@@ -216,17 +217,17 @@ export const styles = {
     "& img:nth-of-type(8)": {
       top: {
         xs: 160,
-        md: 290,
+        md: 255,
       },
       left: {
         xs: 90,
-        md: 140,
+        md: 150,
       },
     },
     "& img:nth-of-type(9)": {
       top: {
         xs: 160,
-        md: 290,
+        md: 255,
       },
       left: {
         xs: 140,
@@ -236,17 +237,17 @@ export const styles = {
     "& img:nth-of-type(10)": {
       top: {
         xs: 160,
-        md: 290,
+        md: 255,
       },
       left: {
         xs: 185,
-        md: 290,
+        md: 280,
       },
     },
     "& img:nth-of-type(11)": {
       top: {
         xs: 195,
-        md: 355,
+        md: 310,
       },
       left: {
         xs: 80,
@@ -256,7 +257,7 @@ export const styles = {
     "& img:nth-of-type(12)": {
       top: {
         xs: 200,
-        md: 360,
+        md: 315,
       },
       left: {
         xs: 140,
@@ -266,7 +267,7 @@ export const styles = {
     "& img:nth-of-type(13)": {
       top: {
         xs: 195,
-        md: 355,
+        md: 310,
       },
       left: {
         xs: 195,
@@ -276,7 +277,7 @@ export const styles = {
     "& img:nth-of-type(14)": {
       top: {
         xs: 230,
-        md: 415,
+        md: 360,
       },
       left: {
         xs: 70,
@@ -286,7 +287,7 @@ export const styles = {
     "& img:nth-of-type(15)": {
       top: {
         xs: 230,
-        md: 435,
+        md: 365,
       },
       left: {
         xs: 115,
@@ -296,27 +297,27 @@ export const styles = {
     "& img:nth-of-type(16)": {
       top: {
         xs: 230,
-        md: 420,
+        md: 360,
       },
       left: {
         xs: 170,
-        md: 240,
+        md: 250,
       },
     },
     "& img:nth-of-type(17)": {
       top: {
         xs: 235,
-        md: 425,
+        md: 365,
       },
       left: {
         xs: 210,
-        md: 305,
+        md: 315,
       },
     },
     "& img:nth-of-type(18)": {
       top: {
         xs: 265,
-        md: 480,
+        md: 415,
       },
       left: {
         xs: 85,
@@ -326,7 +327,7 @@ export const styles = {
     "& img:nth-of-type(19)": {
       top: {
         xs: 265,
-        md: 505,
+        md: 415,
       },
       left: {
         xs: 140,
@@ -336,7 +337,7 @@ export const styles = {
     "& img:nth-of-type(20)": {
       top: {
         xs: 265,
-        md: 490,
+        md: 415,
       },
       left: {
         xs: 185,
@@ -346,17 +347,17 @@ export const styles = {
     "& img:nth-of-type(21)": {
       top: {
         xs: 270,
-        md: 500,
+        md: 415,
       },
       left: {
         xs: 225,
-        md: 300,
+        md: 320,
       },
     },
     "& img:nth-of-type(22)": {
       top: {
         xs: 295,
-        md: 555,
+        md: 465,
       },
       left: {
         xs: 35,
@@ -366,17 +367,17 @@ export const styles = {
     "& img:nth-of-type(23)": {
       top: {
         xs: 300,
-        md: 580,
+        md: 470,
       },
       left: {
         xs: 80,
-        md: 45,
+        md: 140,
       },
     },
     "& img:nth-of-type(24)": {
       top: {
         xs: 300,
-        md: 560,
+        md: 465,
       },
       left: {
         xs: 130,
@@ -386,7 +387,7 @@ export const styles = {
     "& img:nth-of-type(25)": {
       top: {
         xs: 305,
-        md: 580,
+        md: 470,
       },
       left: {
         xs: 190,
@@ -396,7 +397,7 @@ export const styles = {
     "& img:nth-of-type(26)": {
       top: {
         xs: 300,
-        md: 580,
+        md: 465,
       },
       left: {
         xs: 240,
@@ -406,7 +407,7 @@ export const styles = {
     "& img:nth-of-type(27)": {
       top: {
         xs: 330,
-        md: 630,
+        md: 515,
       },
       left: {
         xs: 40,
@@ -416,7 +417,7 @@ export const styles = {
     "& img:nth-of-type(28)": {
       top: {
         xs: 340,
-        md: 650,
+        md: 520,
       },
       left: {
         xs: 100,
@@ -426,7 +427,7 @@ export const styles = {
     "& img:nth-of-type(29)": {
       top: {
         xs: 330,
-        md: 630,
+        md: 515,
       },
       left: {
         xs: 155,
@@ -436,7 +437,7 @@ export const styles = {
     "& img:nth-of-type(30)": {
       top: {
         xs: 340,
-        md: 640,
+        md: 520,
       },
       left: {
         xs: 215,
@@ -446,7 +447,7 @@ export const styles = {
     "& img:nth-of-type(31)": {
       top: {
         xs: 330,
-        md: 645,
+        md: 515,
       },
       left: {
         xs: 265,
