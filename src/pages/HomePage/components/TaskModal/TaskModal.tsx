@@ -147,7 +147,7 @@ export const TaskModal: FC<ITaskModalProps> = ({
                 <>
                   <Typography sx={styles.modalTitle}>{title}</Typography>
                   <Typography sx={styles.modalDescription}>{task}</Typography>
-                  {link !== "" && (
+                  {link && (
                     <Link to={link} target="_blank">
                       <Typography sx={styles.modalLink}>
                         Читать статью
