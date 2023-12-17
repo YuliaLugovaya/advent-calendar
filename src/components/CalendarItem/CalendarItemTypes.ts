@@ -8,4 +8,5 @@ export type ICalendarItemProps = {
   id: string;
   date: string;
   link: string;
+  active: boolean;
 };

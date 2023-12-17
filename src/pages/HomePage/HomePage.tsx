@@ -1,10 +1,10 @@
 import React from "react";
-import { Calendar } from "./components/Calendar";
+import { CalendarWrapper } from "./components/CalendarWrapper";
 
 const HomePage = () => {
   return (
     <>
-      <Calendar />
+      <CalendarWrapper />
     </>
   );
 };
