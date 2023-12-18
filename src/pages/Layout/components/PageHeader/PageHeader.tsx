@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import {
   Box,
   CardMedia,
@@ -14,15 +14,21 @@ import burger from "assets/images/png/burger-menu.png";
 import close from "assets/images/png/close.png";
 
 export const PageHeader: FC = () => {
+  const location = useLocation();
+  const isMobile = useMediaQuery("(max-width: 1024px)");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(location.pathname);
+
   const toggleDrawer = () => {
     setIsDrawerOpen((prev) => !prev);
   };
-  const isMobile = useMediaQuery("(max-width: 1024px)");
-  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
 
   const isActiveLink = (path: string) => {
-    return location.pathname.endsWith(path) ? "#c29463" : "#FFFFFF";
+    return activeLink.endsWith(path) ? "#c29463" : "#FFFFFF";
   };
 
   return (

@@ -77,8 +77,9 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
         sx={{
           ...styles.itemContainer,
           bgcolor: colorBg,
+          outline: isCompleted ? "5px solid rgb(250, 243, 198)" : "none",
           boxShadow: isCompleted
-            ? "0px 0px 5px 8px rgba(250, 243, 198, 0.8)"
+            ? "0px 0px 10px 10px rgba(255, 255, 255, 0.8)"
             : "none",
           "&:hover": { bgcolor: `${colorBg}99` },
         }}
