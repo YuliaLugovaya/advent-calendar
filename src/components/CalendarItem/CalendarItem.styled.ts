@@ -13,6 +13,7 @@ export const styles = {
     height: "95%",
     gap: "10px",
     borderRadius: "20px",
+    backfaceVisibility: "hidden",
   },
   itemTitle: {
     display: "flex",

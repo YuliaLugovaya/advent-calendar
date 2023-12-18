@@ -81,6 +81,7 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
           boxShadow: isCompleted
             ? "0px 0px 10px 10px rgba(255, 255, 255, 0.8)"
             : "none",
+          borderRadius: "20px",
           "&:hover": { bgcolor: `${colorBg}99` },
         }}
       >
