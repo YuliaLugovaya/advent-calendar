@@ -35,21 +35,11 @@ export const TaskModal: FC<ITaskModalProps> = ({
 }) => {
   const [showBallContent, setShowBallContent] = useState(false);
   const [showTask, setShowTask] = useState(false);
+  const [isTaskCompleted, setIsTaskCompleted] = useState(false);
+  const [showButton, setShowButton] = useState(false);
   const currentDate = new Date();
   const comingDate = new Date(date);
   const isReady = comingDate <= currentDate;
-
-  const [isTaskCompleted, setIsTaskCompleted] = useState(false);
-  const [showButton, setShowButton] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setTimeout(() => {
-      setIsTaskCompleted(!isTaskCompleted);
-    }, 1000);
-    setTimeout(() => {
-      setShowButton(true);
-    }, 1000);
-  };
 
   const dispatch = useDispatch();
 
@@ -60,6 +50,15 @@ export const TaskModal: FC<ITaskModalProps> = ({
     (rootReducer: { task: TaskState }) =>
       rootReducer.task.isCompleted[id] || false,
   );
+
+  const handleCheckboxChange = () => {
+    setTimeout(() => {
+      setIsTaskCompleted(!isTaskCompleted);
+    }, 1000);
+    setTimeout(() => {
+      setShowButton(true);
+    }, 1000);
+  };
 
   const handleReceiveBall = () => {
     if (ball) {
