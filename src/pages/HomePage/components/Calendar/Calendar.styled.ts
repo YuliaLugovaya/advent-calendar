@@ -15,11 +15,10 @@ export const styles = {
         "& .slick-track": {
           width: "10000px !important",
         },
-        pt: "30px !important",
+        p: "30px 50px !important",
       },
       "& .slick-slide": {
         width: "250px",
-        padding: "0 8px",
         justifyContent: "center",
       },
     },
@@ -31,7 +30,10 @@ export const styles = {
       lg: "end",
     },
     gap: "10px",
-    m: "20px",
+    m: {
+      xs: "10px 20px 20% 20px",
+      lg: "20px",
+    },
   },
   calendarPrev: {
     bgcolor: "#c29463",

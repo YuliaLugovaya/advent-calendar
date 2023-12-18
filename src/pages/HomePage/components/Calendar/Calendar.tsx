@@ -36,7 +36,7 @@ export const Calendar: FC = () => {
     centerMode: true,
     initialSlide: currentSlide,
     afterChange: (slideIndex: number) => setCurrentSlide(slideIndex),
-    swipeToSlide: false,
+    swipeToSlide: true,
     infinite: false,
   };
 

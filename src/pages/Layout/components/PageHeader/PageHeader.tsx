@@ -7,7 +7,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { styles } from "./PageHeader.styled";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { routes } from "config/routes";
 import ball from "assets/images/png/ball.png";
 import burger from "assets/images/png/burger-menu.png";
@@ -19,6 +19,11 @@ export const PageHeader: FC = () => {
     setIsDrawerOpen((prev) => !prev);
   };
   const isMobile = useMediaQuery("(max-width: 1024px)");
+  const location = useLocation();
+
+  const isActiveLink = (path: string) => {
+    return location.pathname.endsWith(path) ? "#c29463" : "#FFFFFF";
+  };
 
   return (
     <Box sx={styles.headerWrapper} component="header">
@@ -58,20 +63,42 @@ export const PageHeader: FC = () => {
               />
               <Box sx={styles.headerLinksBurgerContainer}>
                 <Link onClick={toggleDrawer} to={routes.home.root}>
-                  <Typography sx={styles.headerLinksBurger}>
+                  <Typography
+                    sx={{
+                      ...styles.headerLinksBurger,
+                      color: isActiveLink(routes.home.root),
+                    }}
+                  >
                     Главная страница
                   </Typography>
                 </Link>
                 <Link onClick={toggleDrawer} to={routes.home.tree}>
-                  <Typography sx={styles.headerLinksBurger}>
+                  <Typography
+                    sx={{
+                      ...styles.headerLinksBurger,
+                      color: isActiveLink(routes.home.tree),
+                    }}
+                  >
                     Новогодняя ёлка
                   </Typography>
                 </Link>
                 <Link onClick={toggleDrawer} to={routes.home.balls}>
-                  <Typography sx={styles.headerLinksBurger}>Шарики</Typography>
+                  <Typography
+                    sx={{
+                      ...styles.headerLinksBurger,
+                      color: isActiveLink(routes.home.balls),
+                    }}
+                  >
+                    Шарики
+                  </Typography>
                 </Link>
                 <Link onClick={toggleDrawer} to={routes.home.parents}>
-                  <Typography sx={styles.headerLinksBurger}>
+                  <Typography
+                    sx={{
+                      ...styles.headerLinksBurger,
+                      color: isActiveLink(routes.home.parents),
+                    }}
+                  >
                     Родителям
                   </Typography>
                 </Link>
@@ -81,16 +108,44 @@ export const PageHeader: FC = () => {
         ) : (
           <Box sx={styles.headerLinksContainer}>
             <Link to={routes.home.root}>
-              <Typography sx={styles.headerLinks}>Главная страница</Typography>
+              <Typography
+                sx={{
+                  ...styles.headerLinks,
+                  color: isActiveLink(routes.home.root),
+                }}
+              >
+                Главная страница
+              </Typography>
             </Link>
             <Link to={routes.home.tree}>
-              <Typography sx={styles.headerLinks}>Новогодняя ёлка</Typography>
+              <Typography
+                sx={{
+                  ...styles.headerLinks,
+                  color: isActiveLink(routes.home.tree),
+                }}
+              >
+                Новогодняя ёлка
+              </Typography>
             </Link>
             <Link to={routes.home.balls}>
-              <Typography sx={styles.headerLinks}>Шарики</Typography>
+              <Typography
+                sx={{
+                  ...styles.headerLinks,
+                  color: isActiveLink(routes.home.balls),
+                }}
+              >
+                Шарики
+              </Typography>
             </Link>
             <Link to={routes.home.parents}>
-              <Typography sx={styles.headerLinks}>Родителям</Typography>
+              <Typography
+                sx={{
+                  ...styles.headerLinks,
+                  color: isActiveLink(routes.home.parents),
+                }}
+              >
+                Родителям
+              </Typography>
             </Link>
           </Box>
         )}

@@ -15,10 +15,12 @@ export const styles = {
   },
   calendarTitle: {
     fontSize: "3rem",
+    lineHeight: "1.3",
   },
   calendarAccent: {
     color: "#c29463",
     fontSize: "3rem",
+    lineHeight: "1.3",
   },
   calendarImage: {
     width: "80%",

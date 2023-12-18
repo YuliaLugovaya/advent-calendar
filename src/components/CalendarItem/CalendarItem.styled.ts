@@ -2,14 +2,15 @@ export const styles = {
   itemWrapper: {
     minWidth: "250px",
     display: "flex",
-    p: "0 8px",
+    p: "0 10px",
+    height: "305px",
   },
   itemContainer: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "start",
     width: "250px",
-    height: "300px",
+    height: "95%",
     gap: "10px",
     borderRadius: "20px",
   },
@@ -29,8 +30,10 @@ export const styles = {
     color: "#FFFFFF",
   },
   itemIcon: {
+    position: "relative",
+    right: "20px",
     alignSelf: "end",
-    width: "65px",
+    width: "90px",
     p: "5px",
   },
 };

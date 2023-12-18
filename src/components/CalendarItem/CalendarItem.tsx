@@ -20,65 +20,91 @@ export const CalendarItem: FC<ICalendarItemProps> = ({
   active,
 }) => {
   const [openModal, setOpenModal] = useState(false);
-  const modalOpen = () => setOpenModal(true);
-  const modalClose = () => setOpenModal(false);
+  const [isMouseDown, setIsMouseDown] = useState(false);
+  const [isMouseMove, setIsMouseMove] = useState(false);
   const isCompleted = useSelector(
     (rootReducer: { task: TaskState }) =>
       rootReducer.task.isCompleted[id] || false,
   );
 
+  const modalOpen = () => {
+    if (!isMouseMove) {
+      setOpenModal(true);
+    }
+  };
+  const modalClose = () => setOpenModal(false);
+
+  const handleMouseDown = () => {
+    setIsMouseDown(true);
+    setIsMouseMove(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseDown(false);
+  };
+
+  const handleMouseMove = () => {
+    if (isMouseDown) {
+      setIsMouseMove(true);
+    }
+  };
+
   return (
-    <Box>
-      <Box
+    <Box
+      sx={{
+        ...styles.itemWrapper,
+        position: "relative",
+        "&:before": {
+          content: `""`,
+          display: "block",
+          width: "calc(100%)",
+          height: "44px",
+          position: "absolute",
+          top: "-23px",
+          left: "-1px",
+          zIndex: "2",
+          background: active
+            ? `url(${snowCap}) left top/100% 100% no-repeat`
+            : "none",
+        },
+      }}
+    >
+      <Button
+        onClick={modalOpen}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
         sx={{
-          ...styles.itemWrapper,
-          position: "relative",
-          "&:before": {
-            content: `""`,
-            display: "block",
-            width: "calc(100%)",
-            height: "44px",
-            position: "absolute",
-            top: "-20px",
-            left: "-1px",
-            zIndex: "2",
-            background: active
-              ? `url(${snowCap}) left top/100% 100% no-repeat`
-              : "none",
-          },
+          ...styles.itemContainer,
+          bgcolor: colorBg,
+          boxShadow: isCompleted
+            ? "0px 0px 5px 8px rgba(250, 243, 198, 0.8)"
+            : "none",
+          "&:hover": { bgcolor: `${colorBg}99` },
         }}
       >
-        <Button
-          onClick={modalOpen}
-          sx={{
-            ...styles.itemContainer,
-            bgcolor: isCompleted ? "#434a3855" : colorBg,
-            "&:hover": { bgcolor: isCompleted ? "#434a3855" : `${colorBg}77` },
-          }}
-        >
-          <Box sx={styles.itemTitle}>
-            <Typography sx={styles.itemDay}>{text}</Typography>
-            <Typography sx={styles.itemText}>декабря</Typography>
-          </Box>
-          <CardMedia
-            sx={styles.itemIcon}
-            component="img"
-            image={icon}
-            alt="Icon"
-          />
-        </Button>
-        <TaskModal
-          openModal={openModal}
-          modalClose={modalClose}
-          title={title}
-          task={task}
-          ball={ball}
-          id={id}
-          date={date}
-          text={text}
-          link={link}
+        <Box sx={styles.itemTitle}>
+          <Typography sx={styles.itemDay}>{text}</Typography>
+          <Typography sx={styles.itemText}>декабря</Typography>
+        </Box>
+        <CardMedia
+          sx={styles.itemIcon}
+          component="img"
+          image={icon}
+          alt="Icon"
         />
-      </Box>
+      </Button>
+      <TaskModal
+        openModal={openModal}
+        modalClose={modalClose}
+        title={title}
+        task={task}
+        ball={ball}
+        id={id}
+        date={date}
+        text={text}
+        link={link}
+      />
     </Box>
   );
 };
