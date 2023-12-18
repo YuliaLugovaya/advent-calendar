@@ -129,4 +129,12 @@ export const styles = {
     width: "30px",
     height: "30px",
   },
+  modalCheckbox: {
+    "& .css-ahj2mt-MuiTypography-root": {
+      fontSize: {
+        xs: "1rem",
+        md: "1.2rem",
+      },
+    },
+  },
 };

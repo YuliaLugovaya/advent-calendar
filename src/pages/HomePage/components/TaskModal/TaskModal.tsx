@@ -6,6 +6,8 @@ import {
   IconButton,
   Button,
   CardMedia,
+  FormControlLabel,
+  Checkbox,
 } from "@mui/material";
 import { ReactComponent as CloseIcon } from "assets/svg/icon_close.svg";
 import { styles } from "./TaskModal.styled";
@@ -35,6 +37,17 @@ export const TaskModal: FC<ITaskModalProps> = ({
   const currentDate = new Date();
   const comingDate = new Date(date);
   const isReady = comingDate <= currentDate;
+
+  const [isTaskCompleted, setIsTaskCompleted] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsTaskCompleted(true);
+
+    setTimeout(() => {
+      setShowButton(true);
+    }, 0);
+  };
 
   const dispatch = useDispatch();
 
@@ -154,15 +167,33 @@ export const TaskModal: FC<ITaskModalProps> = ({
                       </Typography>
                     </Link>
                   )}
-                  <Box>
-                    <Button
-                      onClick={handleReceiveBall}
-                      sx={styles.modalButton}
-                      className="primary"
-                    >
-                      Задание выполнено? Получи сюрприз!
-                    </Button>
-                  </Box>
+                  {!isTaskCompleted ? (
+                    <Box>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            checked={isTaskCompleted}
+                            onChange={handleCheckboxChange}
+                            color="success"
+                          />
+                        }
+                        label="Поставь галочку, если задание выполнено"
+                        sx={styles.modalCheckbox}
+                      />
+                    </Box>
+                  ) : (
+                    showButton && (
+                      <Box>
+                        <Button
+                          onClick={handleReceiveBall}
+                          sx={styles.modalButton}
+                          className="primary"
+                        >
+                          Класс! Получи сюрприз!
+                        </Button>
+                      </Box>
+                    )
+                  )}
                 </>
               ) : (
                 <Typography sx={styles.modalDescription}>
