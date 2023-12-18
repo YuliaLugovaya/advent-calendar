@@ -46,7 +46,6 @@ export const TaskModal: FC<ITaskModalProps> = ({
     setTimeout(() => {
       setIsTaskCompleted(!isTaskCompleted);
     }, 1000);
-
     setTimeout(() => {
       setShowButton(true);
     }, 1000);
