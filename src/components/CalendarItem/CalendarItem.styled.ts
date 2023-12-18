@@ -31,7 +31,7 @@ export const styles = {
   },
   itemIcon: {
     position: "relative",
-    right: "25px",
+    right: "35px",
     alignSelf: "end",
     width: "90px",
     p: "5px",
