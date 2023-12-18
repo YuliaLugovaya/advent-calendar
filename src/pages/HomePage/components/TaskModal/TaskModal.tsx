@@ -8,6 +8,7 @@ import {
   CardMedia,
   FormControlLabel,
   Checkbox,
+  FormGroup,
 } from "@mui/material";
 import { ReactComponent as CloseIcon } from "assets/svg/icon_close.svg";
 import { styles } from "./TaskModal.styled";
@@ -42,11 +43,13 @@ export const TaskModal: FC<ITaskModalProps> = ({
   const [showButton, setShowButton] = useState(false);
 
   const handleCheckboxChange = () => {
-    setIsTaskCompleted(true);
+    setTimeout(() => {
+      setIsTaskCompleted(!isTaskCompleted);
+    }, 1000);
 
     setTimeout(() => {
       setShowButton(true);
-    }, 0);
+    }, 1000);
   };
 
   const dispatch = useDispatch();
@@ -169,17 +172,18 @@ export const TaskModal: FC<ITaskModalProps> = ({
                   )}
                   {!isTaskCompleted ? (
                     <Box>
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={isTaskCompleted}
-                            onChange={handleCheckboxChange}
-                            color="success"
-                          />
-                        }
-                        label="Поставь галочку, если задание выполнено"
-                        sx={styles.modalCheckbox}
-                      />
+                      <FormGroup>
+                        <FormControlLabel
+                          control={
+                            <Checkbox
+                              onChange={handleCheckboxChange}
+                              color="success"
+                            />
+                          }
+                          label="Поставь галочку, если задание выполнено"
+                          sx={styles.modalCheckbox}
+                        />
+                      </FormGroup>
                     </Box>
                   ) : (
                     showButton && (
