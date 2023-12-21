@@ -16,7 +16,7 @@ export const styles = {
       xs: "100%",
       md: "auto",
     },
-    bgcolor: "#FFFFFF",
+    bgcolor: "text.secondary",
     borderRadius: { xs: "0", md: "10px" },
     p: {
       xs: "35px 20px 40px 20px",
@@ -42,7 +42,7 @@ export const styles = {
       xs: "1.4rem",
       md: "1.8rem",
     },
-    color: "#c29463",
+    color: "color.yellow",
     textAlign: "center",
     lineHeight: {
       xs: 1,
@@ -58,7 +58,7 @@ export const styles = {
       xs: "1rem",
       md: "1.3rem",
     },
-    color: "#000000",
+    color: "text.primary",
     textAlign: "justify",
   },
   modalLink: {
@@ -67,7 +67,7 @@ export const styles = {
       xs: "1.1rem",
       md: "1.3rem",
     },
-    color: "#c29463",
+    color: "color.yellow",
   },
   modalButton: {
     width: {
@@ -122,7 +122,7 @@ export const styles = {
       xs: "1.1rem",
       md: "1.3rem",
     },
-    color: "#000000",
+    color: "text.primary",
     textAlign: "justify",
   },
   modalComplete: {

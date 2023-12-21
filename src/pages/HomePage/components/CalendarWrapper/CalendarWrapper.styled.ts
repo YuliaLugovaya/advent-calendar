@@ -18,7 +18,7 @@ export const styles = {
     lineHeight: "1.3",
   },
   calendarAccent: {
-    color: "#c29463",
+    color: "color.yellow",
     fontSize: "3rem",
     lineHeight: "1.3",
   },

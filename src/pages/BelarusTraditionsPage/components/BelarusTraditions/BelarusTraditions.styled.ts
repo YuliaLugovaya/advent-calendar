@@ -22,7 +22,7 @@ export const styles = {
       xs: "1.3rem",
       md: "1.5rem",
     },
-    color: "#c29463",
+    color: "color.yellow",
     textAlign: "center",
   },
   traditionsDescription: {
@@ -43,7 +43,7 @@ export const styles = {
       md: "1.2rem",
     },
     textAlign: "justify",
-    color: "#d99f94",
+    color: "color.peach",
   },
   traditionsSection: {
     display: "flex",

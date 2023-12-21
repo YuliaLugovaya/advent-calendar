@@ -52,7 +52,7 @@ export const styles = {
       xs: "1.3rem",
       md: "1.5rem",
     },
-    color: "#c29463",
+    color: "color.yellow",
     textAlign: "center",
   },
   parentsDescription: {
@@ -65,9 +65,9 @@ export const styles = {
     textAlign: "justify",
   },
   parentsAccent: {
-    color: "#d99f94",
+    color: "color.peach",
     "&:hover": {
-      color: "#94a975",
+      color: "color.greenLight",
     },
   },
   treeLights: {

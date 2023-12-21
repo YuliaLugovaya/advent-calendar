@@ -37,10 +37,10 @@ export const styles = {
     },
   },
   editHead: {
-    bgcolor: "#c29463",
+    bgcolor: "color.yellow",
   },
   editTitles: {
-    color: "#FFFFFF",
+    color: "text.secondary",
     fontSize: {
       xs: 14,
       md: 18,
@@ -54,14 +54,14 @@ export const styles = {
     width: "100%",
   },
   editButton: {
-    color: "#d99f94",
+    color: "color.peach",
     "&:hover": {
       bgcolor: "transparent",
     },
     minWidth: "30px",
   },
   saveButton: {
-    color: "#94a975",
+    color: "color.greenLight",
     "&:hover": {
       bgcolor: "transparent",
     },

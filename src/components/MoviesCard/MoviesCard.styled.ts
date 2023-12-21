@@ -21,7 +21,7 @@ export const styles = {
       md: "1.2rem",
     },
     textAlign: "justify",
-    color: "#d99f94",
+    color: "color.peach",
   },
   moviesPicture: {
     objectFit: "cover",

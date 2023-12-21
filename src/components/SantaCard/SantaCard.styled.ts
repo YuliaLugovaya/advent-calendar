@@ -26,7 +26,7 @@ export const styles = {
       md: "1.2rem",
     },
     textAlign: "justify",
-    color: "#c29463",
+    color: "color.yellow",
   },
   santaCountry: {
     mb: {
@@ -37,7 +37,7 @@ export const styles = {
       md: "1.2rem",
     },
     textAlign: "justify",
-    color: "#d99f94",
+    color: "color.peach",
   },
   santaPicture: {
     objectFit: "contain",

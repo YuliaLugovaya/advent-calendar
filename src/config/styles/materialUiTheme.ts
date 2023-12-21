@@ -1,4 +1,14 @@
-import { createStyles, ThemeOptions } from "@mui/material";
+import {
+  createStyles,
+  ThemeOptions,
+  PaletteOptions,
+} from "@mui/material/styles";
+import { colors } from "./themeColors";
+
+export const themeColors = () =>
+  createStyles({
+    palette: colors,
+  }) as PaletteOptions;
 
 export const theme = () =>
   createStyles({
@@ -28,49 +38,35 @@ export const theme = () =>
             letterSpacing: 0,
             textTransform: "none",
             "&.primary": {
-              backgroundColor: "#421417",
-              borderColor: "#421417",
-              color: "#FFFFFF",
+              backgroundColor: colors.color.burgundy,
+              color: colors.text.secondary,
               "&:hover": {
-                backgroundColor: "#434a38",
-                borderColor: "#434a38",
+                backgroundColor: colors.color.green,
               },
               "&:focus": {
-                borderColor: "#434a38",
-                backgroundColor: "#434a38",
+                backgroundColor: colors.color.green,
               },
               "&:active": {
-                borderColor: "#434a38",
-                backgroundColor: "#434a38",
-                color: "#FFFFFF",
+                backgroundColor: colors.color.green,
               },
               "&:disabled": {
-                borderColor: "#5e4a4b",
-                backgroundColor: "#5e4a4b",
-                color: "#FFFFFF",
+                backgroundColor: colors.color.violet,
               },
             },
             "&.secondary": {
-              backgroundColor: "#c29463",
-              borderColor: "#c29463",
-              color: "#FFFFFF",
+              backgroundColor: colors.color.yellow,
+              color: colors.text.secondary,
               "&:hover": {
-                backgroundColor: "#434a38",
-                borderColor: "#434a38",
+                backgroundColor: colors.color.green,
               },
               "&:focus": {
-                borderColor: "#434a38",
-                backgroundColor: "#434a38",
+                backgroundColor: colors.color.green,
               },
               "&:active": {
-                borderColor: "#434a38",
-                backgroundColor: "#434a38",
-                color: "#FFFFFF",
+                backgroundColor: colors.color.green,
               },
               "&:disabled": {
-                borderColor: "#5e4a4b",
-                backgroundColor: "#5e4a4b",
-                color: "#FFFFFF",
+                backgroundColor: colors.color.violet,
               },
             },
           },

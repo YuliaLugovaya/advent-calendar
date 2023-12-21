@@ -22,12 +22,12 @@ export const styles = {
   },
   itemDay: {
     fontSize: "3.8rem",
-    color: "#FFFFFF",
+    color: "text.secondary",
     lineHeight: "1",
   },
   itemText: {
     fontSize: "2rem",
-    color: "#FFFFFF",
+    color: "text.secondary",
   },
   itemIcon: {
     position: "relative",

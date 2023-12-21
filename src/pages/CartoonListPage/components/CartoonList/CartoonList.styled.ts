@@ -22,7 +22,7 @@ export const styles = {
       xs: "1.3rem",
       md: "1.5rem",
     },
-    color: "#c29463",
+    color: "color.yellow",
     textAlign: "center",
   },
   cartoonList: {
