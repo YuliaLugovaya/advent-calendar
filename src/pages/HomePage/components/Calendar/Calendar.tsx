@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
-import { Box, Button } from "@mui/material";
+import { Box, Button, useMediaQuery } from "@mui/material";
 import { styles } from "./Calendar.styled";
 import { CalendarItem } from "components/CalendarItem/CalendarItem";
 import { CalendarItemsState } from "store/edit/editTypes";
@@ -21,6 +21,7 @@ export const Calendar: FC = () => {
     currentDay ? days.indexOf(currentDay) : 0,
   );
   const sliderRef = useRef<Slider>(null);
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -30,7 +31,7 @@ export const Calendar: FC = () => {
 
   const settings = {
     variableWidth: true,
-    slidesToShow: 3,
+    slidesToShow: currentSlide <= 27 ? 3 : 1,
     slidesToScroll: 1,
     touchThreshold: 500,
     centerMode: true,
@@ -82,8 +83,16 @@ export const Calendar: FC = () => {
               content: '""',
               background: `url(${prev}) no-repeat`,
             },
+            "&:hover": {
+              bgcolor: isDesktop ? "#65401d" : "#c29463",
+            },
+            "&:disabled": {
+              bgcolor: "#c2946388",
+              pointerEvents: "none",
+            },
           }}
           onClick={prevSlide}
+          disabled={currentSlide === 0}
         ></Button>
         <Button
           sx={{
@@ -95,8 +104,16 @@ export const Calendar: FC = () => {
               content: '""',
               background: `url(${next}) no-repeat`,
             },
+            "&:hover": {
+              bgcolor: isDesktop ? "#65401d" : "#c29463",
+            },
+            "&:disabled": {
+              bgcolor: "#c2946388",
+              pointerEvents: "none",
+            },
           }}
           onClick={nextSlide}
+          disabled={currentSlide === days.length - 1}
         ></Button>
       </Box>
     </Box>

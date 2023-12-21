@@ -17,7 +17,7 @@ export const PageHeader: FC = () => {
   const location = useLocation();
   const isMobile = useMediaQuery("(max-width: 1024px)");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(routes.home.root);
+  const [activeLink, setActiveLink] = useState("/advent-calendar");
 
   const toggleDrawer = () => {
     setIsDrawerOpen((prev) => !prev);

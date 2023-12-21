@@ -41,9 +41,6 @@ export const styles = {
     width: "50px",
     height: "50px",
     minWidth: "0px",
-    "&:hover": {
-      bgcolor: "#c2946388",
-    },
   },
   calendarNext: {
     bgcolor: "#c29463",
@@ -51,17 +48,5 @@ export const styles = {
     width: "50px",
     height: "50px",
     minWidth: "0px",
-    "&:hover": {
-      bgcolor: "#c2946388",
-    },
-    "&:before": {
-      width: "10px",
-      height: "10px",
-      position: "absolute",
-      left: "50%",
-      top: "50%",
-      content: '""',
-      background: "url(advent-calendar/static/media/) no-repeat",
-    },
   },
 };
