@@ -32,7 +32,7 @@ declare module "@mui/material/styles" {
       primary?: string;
       yellow?: string;
       green?: string;
-      greenLight: string;
+      greenLight?: string;
       turquoise?: string;
       burgundy?: string;
       peach?: string;
