@@ -67,14 +67,9 @@ export const styles = {
     m: "30px 0",
   },
   burgerMenu: {
-    "& .css-1160xiw-MuiPaper-root-MuiDrawer-paper": {
+    "& .MuiDrawer-paperAnchorRight": {
       p: "20px",
-      bgcolor: "color.green",
-      width: "80vw",
-    },
-    "& .css-1ab2xsx": {
-      p: "20px",
-      bgcolor: "color.green",
+      bgcolor: "#434a38",
       width: "80vw",
     },
   },
