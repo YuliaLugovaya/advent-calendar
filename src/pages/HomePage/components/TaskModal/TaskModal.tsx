@@ -172,14 +172,9 @@ export const TaskModal: FC<ITaskModalProps> = ({
                     <Box>
                       <FormGroup>
                         <FormControlLabel
-                          control={
-                            <Checkbox
-                              onChange={handleCheckboxChange}
-                              color="success"
-                            />
-                          }
+                          control={<Checkbox onChange={handleCheckboxChange} />}
                           label="Поставь галочку, если задание выполнено"
-                          sx={styles.modalCheckbox}
+                          sx={styles.modalCheckboxLabel}
                         />
                       </FormGroup>
                     </Box>

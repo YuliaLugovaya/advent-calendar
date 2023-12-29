@@ -129,12 +129,20 @@ export const styles = {
     width: "30px",
     height: "30px",
   },
-  modalCheckbox: {
-    "& .css-ahj2mt-MuiTypography-root": {
-      fontSize: {
-        xs: "1rem",
-        md: "1.2rem",
-      },
+  modalCheckboxLabel: {
+    fontSize: {
+      xs: "1rem",
+      md: "1.2rem",
+    },
+    "& span:nth-of-type(1)": {
+      color: "color.greenLight",
+    },
+    "& .MuiCheckbox-root": {
+      transition: "0.3s ease",
+    },
+    "& .MuiCheckbox-root:hover": {
+      bgcolor: "#94a97533",
+      transition: "0.3s ease",
     },
   },
 };
