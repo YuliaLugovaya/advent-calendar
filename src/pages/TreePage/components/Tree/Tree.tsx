@@ -22,8 +22,9 @@ export const Tree: FC = () => {
   const treeBalls = useSelector(
     (rootReducer: { ball: BallState }) => rootReducer.ball.treeBalls,
   );
-  const isStart = balls.length === 0;
+  const isStart = balls.length === 0 && treeBalls.length < 31;
   const isFinish = balls.length === 0 && treeBalls.length === 31;
+  console.log(isFinish);
   const isMobile = useMediaQuery("(max-width: 1024px)");
 
   const dispatch = useDispatch();
@@ -113,11 +114,10 @@ export const Tree: FC = () => {
               <Typography sx={styles.ballsDescription}>
                 Вау! Такая красивая ёлочка у тебя получилась! Не забудь
                 посмотреть свою коллекцию новогодних шариков. А потом готовься к
-                празднику, ведь уже сегодня нужно встречать Новый год! Пусть
-                сбудутся все-все желания, которые ты загадаешь в новогоднюю
-                ночь. Ураа!
+                празднику, ведь уже сегодня нужно встречать Новый год. Пусть
+                сбудутся все желания, которые ты загадаешь в новогоднюю ночь!
               </Typography>
-              <Link to={routes.home.balls}>
+              <Link to={`/advent-calendar/balls`}>
                 <Button sx={styles.treeButton} className="secondary">
                   Посмотреть шарики
                 </Button>

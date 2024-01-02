@@ -73,6 +73,8 @@ const colors = {
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
+const currentMonth = currentDate.getMonth();
+const isNotDecember = currentMonth >= 0 && currentMonth <= 10;
 
 const calendarItems = [
   {
@@ -83,7 +85,9 @@ const calendarItems = [
     task: "Как здорово! Сегодня первый день зимы. Это значит, что совсем скоро будет Новый год. И самое первое праздничное задание - наряди с мамой ёлочку.",
     ball: ballDecemberFirst,
     colorBg: colors.yellow,
-    date: format(new Date(currentYear, 11, 1), "yyyy-MM-dd"),
+    date: isNotDecember
+      ? format(new Date(currentYear, 0, 1), "yyyy-MM-dd")
+      : format(new Date(currentYear, 11, 1), "yyyy-MM-dd"),
     link: "",
   },
   {
@@ -94,7 +98,9 @@ const calendarItems = [
     task: "Начни день с самых тёплых объятий с любимыми людьми. А ещё подари обнимашку любимой игрушке.",
     ball: ballDecemberSecond,
     colorBg: colors.green,
-    date: format(new Date(currentYear, 11, 2), "yyyy-MM-dd"),
+    date: isNotDecember
+      ? format(new Date(currentYear, 0, 1), "yyyy-MM-dd")
+      : format(new Date(currentYear, 11, 2), "yyyy-MM-dd"),
     link: "",
   },
   {
@@ -105,7 +111,9 @@ const calendarItems = [
     task: "Начни с родными традицию - в выходной декабрьский день смотреть новогодний фильм или мультик. Сегодня выбери любой фильм про зиму и Новый год. На сайте есть подборка, можно посмотреть и выбрать.",
     ball: ballDecemberThird,
     colorBg: colors.turquoise,
-    date: format(new Date(currentYear, 11, 3), "yyyy-MM-dd"),
+    date: isNotDecember
+      ? format(new Date(currentYear, 0, 1), "yyyy-MM-dd")
+      : format(new Date(currentYear, 11, 3), "yyyy-MM-dd"),
     link: "/advent-calendar/movie-list",
   },
   {
@@ -116,7 +124,9 @@ const calendarItems = [
     task: "Придумай, какие добрые дела ты можешь сделать сегодня. Это может быть помощь родным людям. Можешь помочь маме сделать завтрак или отсортировать игрушки. Придумай, что ты будешь делать в удовольствие.",
     ball: ballDecemberFourth,
     colorBg: colors.burgundy,
-    date: format(new Date(currentYear, 11, 4), "yyyy-MM-dd"),
+    date: isNotDecember
+      ? format(new Date(currentYear, 0, 1), "yyyy-MM-dd")
+      : format(new Date(currentYear, 11, 4), "yyyy-MM-dd"),
     link: "",
   },
   {
@@ -127,7 +137,9 @@ const calendarItems = [
     task: "Придумай подарки для всех своих близких. Не забывай, что самое ценное в подарках - это любовь и забота, которые мы вкладываем в них. Запиши свои идеи и постарайся придумать что-то особенное для каждого.",
     ball: ballDecemberFifth,
     colorBg: colors.peach,
-    date: format(new Date(currentYear, 11, 5), "yyyy-MM-dd"),
+    date: isNotDecember
+      ? format(new Date(currentYear, 0, 1), "yyyy-MM-dd")
+      : format(new Date(currentYear, 11, 5), "yyyy-MM-dd"),
     link: "",
   },
   {
